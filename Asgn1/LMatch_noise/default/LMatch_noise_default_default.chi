@@ -1,0 +1,298 @@
+  Run on arjun-Lenovo-ubuntu18 (Linux 5.4.0-66-generic)
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : arjunmenonv
+*** OS    : Ubuntu 16.04 LTS \n \l [VCO = aol]
+*** CPU   :
+    Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 8
+*** Freq  : 2431.345MHz
+*** Cache : 6144 KB
+*** MEM   : 8058796 kB
+*** Date  : Mon Mar  8 06:31:44 2021
+
+*** Eldo VERSION : ELDO 16.2 patch1 (64 bits) Fri Jun 24 12:20:01 GMT 2016
+
+/cad/tools/mentor/AMS162/aol/bin/eldo_64.exe -i /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default/LMatch_noise_default_default.cir -64b -gwl JWDB -noconf 
+
+
+***** PRE-PROCESSING ...
+
+1******* 8-Mar-21 *******  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  *******06:31:44******
+
+0* Component: /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise Viewpoint: default
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  
+    3  ** including /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default/netlist.spi
+    1  * ELDO netlist generated with ICnet by 'arjunmenonv' on Mon Mar  8 2021 at 06:31:44
+    2  
+    3  .CONNECT GROUND 0
+    4  
+    5  *
+    6  * Globals.
+    7  *
+    8  .GLOBAL GROUND
+    9  
+   10  *
+   11  * MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise
+   12  *
+   13          V1 1 GROUND RPORT=3.125 IPORT=1 DC 0V AC 2.5 0
+   14          L1 N$4 GROUND 2.0547N
+   15          C1 1 N$4 13.15P
+   16          RNOISE N$4 GROUND 193.651 NOISE=1
+   17          R1 N$4 GROUND 50 NOISE=1
+   18  *
+   19  *end
+    3  
+    4  .OPTION AEX
+    5  .OPTION ENGNOT
+    6  .OPTION LIMPROBE=10000
+    7  .OPTION NOASCII
+    8  .PLOT AC ZDB(1,1)
+    9  .PLOT AC ZR(1,1)
+   10  .PLOT AC ZI(1,1)
+   11  .PLOT AC SDB(1,1)
+   12  
+   13  * - Analysis Setup - AC
+   14  .AC DEC 1000 500meg 2gig
+   15  
+   16  * --- Global Outputs
+   17  .PROBE V SG
+   18  
+   19  * --- Params
+   20  .TEMP 27
+   21  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (MB):    398
+7 elements
+5 nodes 
+1 input signals
+Detail about objects and nodes found in the design, and simulated by Eldo:
+Number of nodes                     5
+Number of intrinsic nodes           3
+Number of input signals             1
+Number of resistors                 2
+Number of floating capacitors       1
+Number of grounded capacitors       0
+Number of inductors                 2
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       0
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  7
+*** DATE:  8-Mar-2021 06:31:45
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+
+
+1*************** 8-Mar-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************06:31:45*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise Viewpoint: default
+0****                 OPTION SUMMARY                                         TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 100000   ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 1.00e-12 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+CPTIME         = UNDEF    STAT           = 0        TIMEDIV        = 0        
+SIMUDIV        = 10       SAVETIME       = 0        MAXTRAN        = 1000     
+MAXNODES       = 10000    MAXV           = 1.00e+13 LIMPROBE       = 10000    
+FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        TNOM           = 2.70e+01 
+TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 1        AEX            = 1        
+AEX            = 1        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        NOBIN          = 0        NOCOU          = 1        
+RMOS           = 0        NWRMOS         = 1        NONWRMOS       = 0        
+USEDEFAP       = 0        NOASCII        = 1        ASCII          = 0        
+MIXED          = 0        SWITCH         = 0        USERSWITCH     = 0        
+TIMING         = 0        MODWL          = 1        ULOGIC         = 0        
+
+
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+
+
+
+
+1*************** 8-Mar-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************06:31:45*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise Viewpoint: default
+0****                 SMALL SIGNAL BIAS SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+1             0.0000      N$4           0.0000      
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V1         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  0.0000      WATTS
+
+
+
+
+
+1*************** 8-Mar-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************06:31:45*****************
+
+0* Component: /home/arjunmenonv/Eldo_file
+0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+               RNOISE       R1           
+V+              0.0000       0.0000      
+V-              0.0000       0.0000      
+ID              0.0000       0.0000      
+
+               C1           
+V+              0.0000      
+V-              0.0000      
+ID              0.0000      
+
+               L1           
+V+              0.0000      
+V-              0.0000      
+ID              0.0000      
+
+
+***>CPU TIME 0s 010ms <***
+
+
+
+
+1*************** 8-Mar-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************06:31:45*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise Viewpoint: default
+0****                 ACCOUNTING INFORMATION                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     5
+Number of intrinsic nodes           3
+Number of input signals             1
+Number of resistors                 2
+Number of floating capacitors       1
+Number of grounded capacitors       0
+Number of inductors                 2
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       0
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  7
+Number of equations                 9
+Number of non-zero terms            24
+Percent Zeros                      70.37
+Number of Newton iterations         1
+Number of AC points                 604
+Evaluation of active devices        0
+Memory size (MB)                    399.4
+
+***>CPU TIME 0s 010ms <***
+
+
+***>GLOBAL CPU TIME 0s 040ms <***
+
+
+***>GLOBAL ELAPSED TIME 2s <***
+
+
+  Job started at  8-Mar-2021 06:31:44
+  Job end at      8-Mar-2021 06:31:46
+
+  Run on arjun-Lenovo-ubuntu18 (Linux 5.4.0-66-generic)
+

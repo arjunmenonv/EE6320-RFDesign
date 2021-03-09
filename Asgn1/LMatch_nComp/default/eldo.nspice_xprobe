@@ -1,0 +1,41 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell AC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell INDUCTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_RESISTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell #top#
+   Pin 1 1
+   Net N$7 N$7
+   Net 1 1
+   Global ground GROUND
+   Inst V1 V1 AC_V_SOURCE
+   Inst L1 L1 INDUCTOR
+   Inst C1 C1 IDEAL_CAPACITOR
+   Inst Rnoise RNOISE IDEAL_RESISTOR
+   Inst R1 R1 IDEAL_RESISTOR
+End Cell
+

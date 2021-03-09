@@ -1,0 +1,21 @@
+A 5 u Eddm_design_viewpoint 6045c48d7e14.03.7f.00.01.01.00.48.c1 2 2 3 0
+V v 1 4 6045c48d7e14.03.7f.00.01.01.01.48.c1
+F f 1 "default.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 6045c48d8b35.03.7f.00.01.01.00.48.c1
+F f 2 "default.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/schematic" 3 mgc_schematic 6045c2c01627.03.7f.00.01.01.00.48.c1 6045c0dc5d2a.03.7f.00.01.01.00.48.c1
+R cspuv 1 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/part" 1 Eddm_part 6045c298d99b.03.7f.00.01.01.01.48.c1 6045c298d99b.03.7f.00.01.01.00.48.c1
+R cspuv 2 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default/default" 1 Eddm_ba_mgr 6045c48d7f59.03.7f.00.01.01.01.48.c1 6045c48d7f59.03.7f.00.01.01.00.48.c1
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/schematic" 3 mgc_schematic 6045c2c01627.03.7f.00.01.01.00.48.c1 6045c0dc5d2a.03.7f.00.01.01.00.48.c1
+R cspuv 1 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/part" 1 Eddm_part 6045c298d99b.03.7f.00.01.01.01.48.c1 6045c298d99b.03.7f.00.01.01.00.48.c1
+R cspuv 2 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default/default" 1 Eddm_ba_mgr 6045c48d7f59.03.7f.00.01.01.01.48.c1 6045c48d7f59.03.7f.00.01.01.00.48.c1

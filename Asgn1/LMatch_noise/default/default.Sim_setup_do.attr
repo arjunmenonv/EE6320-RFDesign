@@ -1,0 +1,11 @@
+A 5 u Sim_setup_do 6045c48d8ba3.03.7f.00.01.01.00.48.c1 2 2 4 0
+V v 1 1 6045c65cf122.03.7f.00.01.01.00.48.c1
+F f 1 "default.db_1"
+V v 2 1 6045c65d0d44.03.7f.00.01.01.00.48.c1
+F f 2 "default.db_2"
+O 2
+R csdni 2 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 3 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default" 2 Eddm_design_viewpoint 6045c48d8b35.03.7f.00.01.01.00.48.c1 6045c48d7e14.03.7f.00.01.01.00.48.c1
+O 1
+R csdni 0 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 1 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_noise/default" 2 Eddm_design_viewpoint 6045c48d8b35.03.7f.00.01.01.00.48.c1 6045c48d7e14.03.7f.00.01.01.00.48.c1

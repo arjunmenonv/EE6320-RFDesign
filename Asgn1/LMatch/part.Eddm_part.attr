@@ -1,0 +1,6 @@
+A 5 u Eddm_part 604526192ac9.03.7f.00.01.01.00.17.6b 1 2 1 0
+V v 1 1 604526192ac9.03.7f.00.01.01.01.17.6b
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/schematic" 1 mgc_schematic 6045224ce495.03.7f.00.01.01.00.17.6b 6045224ce494.03.7f.00.01.01.00.17.6b

@@ -1,0 +1,35 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Monday, March 8, 2021 at 6:38:21 AM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.84
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <LMatch_noise_default_default/AC>ZR(1,1) -transform "< none >"
+set axis properties -axis X -scale log10
+set axis properties -row 1 -axis Y1 -autorange -grid on
+set user scale Current 1.0 A -row 1 -axis Y1
+set row height -row 1 -init 209
+
+// ===== Create row #2 =====
+add waveform -color_index 1 <LMatch_noise_default_default/AC>ZI(1,1) -transform "< none >"
+set axis properties -row 2 -axis Y1 -autorange -grid on
+set user scale Current 1.0 A -row 2 -axis Y1
+set row height -row 2 -init 209
+
+// ===== Set X-axis data units =====
+set user scale Frequency 1.0 Hz -axis X
+
+// ====== Create the cursors, markers and measurements =====
+
+set active workspace Workspace1

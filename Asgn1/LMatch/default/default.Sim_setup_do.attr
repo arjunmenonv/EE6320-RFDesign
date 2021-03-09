@@ -1,0 +1,19 @@
+A 5 u Sim_setup_do 604526198c59.03.7f.00.01.01.00.17.6b 14 2 37 0
+V v 12 1 6045a9e8df19.03.7f.00.01.01.00.48.c1
+F f 12 "default.db_12"
+V v 13 1 6045acd99c8f.03.7f.00.01.01.00.48.c1
+F f 13 "default.db_13"
+V v 14 1 6045b70d3be6.03.7f.00.01.01.00.48.c1
+F f 14 "default.db_14"
+O 14
+R csdni 34 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 35 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/default" 5 Eddm_design_viewpoint 6045a2722a0a.03.7f.00.01.01.00.48.c1 6045261935d0.03.7f.00.01.01.00.17.6b
+R csdni 36 "/home/arjunmenonv/Eldo_files/Models_UMC180/MM180_REG18_V124.lib" 1 Mgc_file
+O 13
+R csdni 31 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 32 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/default" 5 Eddm_design_viewpoint 6045a2722a0a.03.7f.00.01.01.00.48.c1 6045261935d0.03.7f.00.01.01.00.17.6b
+R csdni 33 "/home/arjunmenonv/Eldo_files/Models_UMC180/MM180_REG18_V124.lib" 1 Mgc_file
+O 12
+R csdni 28 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 29 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/default" 5 Eddm_design_viewpoint 6045a2722a0a.03.7f.00.01.01.00.48.c1 6045261935d0.03.7f.00.01.01.00.17.6b
+R csdni 30 "/home/arjunmenonv/Eldo_files/Models_UMC180/MM180_REG18_V124.lib" 1 Mgc_file

@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 6045224ce494.03.7f.00.01.01.00.17.6b 20 2 1 0
+V v 18 1 6045b711707b.03.7f.00.01.01.00.48.c1
+F o 0 ""
+V v 19 1 6045b73c2644.03.7f.00.01.01.00.48.c1
+F o 0 ""
+V v 20 1 6045c0cd3e94.03.7f.00.01.01.00.48.c1
+F o 0 ""
+O 20
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/schematic/sheet1" 19 mgc_sheet 6045c0cd3e58.03.7f.00.01.01.00.48.c1 6045224ce830.03.7f.00.01.01.00.17.6b
+O 19
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/schematic/sheet1" 18 mgc_sheet 6045b73c2626.03.7f.00.01.01.00.48.c1 6045224ce830.03.7f.00.01.01.00.17.6b
+O 18
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/schematic/sheet1" 17 mgc_sheet 6045b7117062.03.7f.00.01.01.00.48.c1 6045224ce830.03.7f.00.01.01.00.17.6b

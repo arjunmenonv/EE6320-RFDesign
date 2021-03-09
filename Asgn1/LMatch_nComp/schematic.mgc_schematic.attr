@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 6045c6693f5e.03.7f.00.01.01.00.48.c1 3 2 1 0
+V v 1 1 6045c6693f5f.03.7f.00.01.01.00.48.c1
+F o 0 ""
+V v 2 1 6045c79c96f9.03.7f.00.01.01.00.48.c1
+F o 0 ""
+V v 3 1 6045c7a00252.03.7f.00.01.01.00.48.c1
+F o 0 ""
+O 3
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_nComp/schematic/sheet1" 2 mgc_sheet 6045c7a00234.03.7f.00.01.01.00.48.c1 6045c6694062.03.7f.00.01.01.00.48.c1
+O 2
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_nComp/schematic/sheet1" 1 mgc_sheet 6045c6694063.03.7f.00.01.01.00.48.c1 6045c6694062.03.7f.00.01.01.00.48.c1
+O 1
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch_nComp/schematic/sheet1" 1 mgc_sheet 6045c6694063.03.7f.00.01.01.00.48.c1 6045c6694062.03.7f.00.01.01.00.48.c1
+P "eddm__refer_state" "eddm__refer_floating"

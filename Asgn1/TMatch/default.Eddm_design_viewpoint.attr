@@ -1,0 +1,29 @@
+A 5 u Eddm_design_viewpoint 6045bc9a2b67.03.7f.00.01.01.00.48.c1 2 2 15 0
+V v 1 4 6045bc9a2b68.03.7f.00.01.01.00.48.c1
+F f 1 "default.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 6045bc9a3d4b.03.7f.00.01.01.00.48.c1
+F f 2 "default.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/schematic" 3 mgc_schematic 6045bc9a135b.03.7f.00.01.01.00.48.c1 6045b750e654.03.7f.00.01.01.00.48.c1
+R cspuv 1 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/part" 1 Eddm_part 6045bc94347e.03.7f.00.01.01.00.48.c1 6045bc94347d.03.7f.00.01.01.00.48.c1
+R cspuv 2 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/default/default" 1 Eddm_ba_mgr 6045bc9a3377.03.7f.00.01.01.01.48.c1 6045bc9a3377.03.7f.00.01.01.00.48.c1
+R cspuv 3 "$MGC_IC_DEVICE_LIB/ideal_resistor/part" 4 Eddm_part 529f0f9fe60f.03.89.ca.95.24.00.04.60 3900e8d5419c.03.93.22.22.60.00.56.1b
+R cspuv 4 "$MGC_IC_DEVICE_LIB/ideal_capacitor/part" 7 Eddm_part 52ce5fe01e9f.03.89.ca.95.24.00.3c.63 3900e8d5884e.03.93.22.22.60.00.56.1b
+R cspuv 5 "$MGC_IC_DEVICE_LIB/inductor/part" 6 Eddm_part 52ce4074f0e9.03.89.ca.95.24.00.53.d4 3900e8d57bc7.03.93.22.22.60.00.56.1b
+R cspuv 6 "$MGC_IC_SOURCES_LIB/ac_v_source/part" 3 Eddm_part 3af197522955.03.93.22.22.60.00.4a.bf 3890a9620320.03.86.56.31.70.00.34.72
+R cspuv 7 "$MGC_IC_DEVICE_LIB/ideal_resistor/ideal_resistor" 11 mgc_symbol 6045249e4abc.03.7f.00.01.01.00.17.6b 3900e8d54202.03.93.22.22.60.00.56.1b
+R cspuv 8 "$MGC_IC_SOURCES_LIB/ac_v_source/ac_v_source" 3 mgc_symbol 3af197522923.03.93.22.22.60.00.4a.bf 3890a962031f.03.86.56.31.70.03.34.72
+R cspuv 9 "$MGC_IC_DEVICE_LIB/inductor/inductor" 6 mgc_symbol 52ce4074f0dd.03.89.ca.95.24.00.53.d4 3900e8d57c2b.03.93.22.22.60.00.56.1b
+R cspuv 10 "$MGC_IC_DEVICE_LIB/ideal_capacitor/ideal_capacitor" 7 mgc_symbol 52ce5fe01e99.03.89.ca.95.24.00.3c.63 3900e8d588b1.03.93.22.22.60.00.56.1b
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/schematic" 3 mgc_schematic 6045bc9a135b.03.7f.00.01.01.00.48.c1 6045b750e654.03.7f.00.01.01.00.48.c1
+R cspuv 1 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/part" 1 Eddm_part 6045bc94347e.03.7f.00.01.01.00.48.c1 6045bc94347d.03.7f.00.01.01.00.48.c1
+R cspuv 2 "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/default/default" 1 Eddm_ba_mgr 6045bc9a3377.03.7f.00.01.01.01.48.c1 6045bc9a3377.03.7f.00.01.01.00.48.c1

@@ -1,0 +1,19 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Mon Mar  8 2021 at 07:16:39
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/Asgn1/TMatch
+*
+        V1 1 GROUND RPORT=3.125 IPORT=1 DC 0V AC 2.5 0
+        L1 N$5 GROUND 2.07n
+        C2 N$5 N$7 5.8023p
+        C1 N$5 1 11.4412p
+        R1 N$7 GROUND 50 NOISE=1
+*
+.end

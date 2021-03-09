@@ -1,0 +1,6 @@
+A 5 u Eddm_ba_mgr 604526193a14.03.7f.00.01.01.00.17.6b 1 2 1 0
+V v 1 1 604526193a14.03.7f.00.01.01.01.17.6b
+F f 1 "default.ba_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Asgn1/LMatch/default" 1 Eddm_design_viewpoint 6045261935d1.03.7f.00.01.01.00.17.6b 6045261935d0.03.7f.00.01.01.00.17.6b

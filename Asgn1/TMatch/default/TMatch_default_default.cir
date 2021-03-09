@@ -1,0 +1,20 @@
+* Component: /home/arjunmenonv/Eldo_files/Asgn1/TMatch Viewpoint: default
+
+.INCLUDE "/home/arjunmenonv/Eldo_files/Asgn1/TMatch/default/netlist.spi"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+.plot AC zdb(1,1)
+.plot AC zr(1,1)
+.plot AC zi(1,1)
+.plot AC sdb(1,1)
+
+* - Analysis Setup - AC
+.AC DEC 1000 500meg 2gig
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
