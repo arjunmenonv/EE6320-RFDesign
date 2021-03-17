@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 6050635a3881.03.7f.00.01.01.00.71.13 13 2 1 0
+V v 11 1 6050922dc7f3.03.7f.00.01.01.00.08.f3
+F o 0 ""
+V v 12 1 605099964590.03.7f.00.01.01.00.08.f3
+F o 0 ""
+V v 13 1 60510ff64fa9.03.7f.00.01.01.00.59.82
+F o 0 ""
+O 13
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/ver1_schem/schematic/sheet1" 12 mgc_sheet 60510ff64f8f.03.7f.00.01.01.00.59.82 6050635a396f.03.7f.00.01.01.00.71.13
+O 12
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/ver1_schem/schematic/sheet1" 11 mgc_sheet 605099964581.03.7f.00.01.01.00.08.f3 6050635a396f.03.7f.00.01.01.00.71.13
+O 11
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/ver1_schem/schematic/sheet1" 10 mgc_sheet 6050922dc7e9.03.7f.00.01.01.00.08.f3 6050635a396f.03.7f.00.01.01.00.71.13
