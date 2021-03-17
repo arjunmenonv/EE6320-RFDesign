@@ -1,0 +1,27 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Wed Mar 17 2021 at 20:15:29
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/LNAProj/LNA_test1
+*
+        RD OUT N$37 591 NOISE=1
+        V1 1 GROUND RPORT=50 IPORT=1 DC 0V AC 1 0
+        VDD N$37 GROUND DC 1.2V
+        ISRC N$37 N$10 DC Ibias
+        CLOAD OUT GROUND 2p
+        LD OUT N$37 3.1n
+        LS GROUND N$29 414p
+        LG 1 N$23 20n
+        CCOUP N$42 N$23 2n
+        RB N$10 N$42 10k NOISE=1
+        M2 OUT N$37 N$31 N$31 CMOSN L=0.16u W=W M=1
+        M0 N$10 N$10 GROUND GROUND CMOSN L=0.16u W=W M=1
+        M1 N$31 N$42 N$29 N$29 CMOSN L=0.16u W=W M=1
+*
+.end

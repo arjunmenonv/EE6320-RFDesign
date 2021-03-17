@@ -1,0 +1,35 @@
+* Component: /home/arjunmenonv/Eldo_files/LNAProj/ver1_schem Viewpoint: default
+
+.options compat
+.INCLUDE "/home/arjunmenonv/Eldo_files/LNAProj/ver1_schem/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+.EXTRACT DC LABEL = gm1 GM(M1)
+.EXTRACT DC LABEL = vgs LX2(M1)
+.EXTRACT LABEL = unCox gm1*gm1/ID(M1)
+.EXTRACT DC LABEL = Cgs1 LX20(M1)
+.EXTRACT DC LABEL = Cdb1 LX22(M1)
+.EXTRACT DC LABEL = Cgd1 LX19(M1)
+.EXTRACT DC LABEL = gm2 GM(M2)
+.EXTRACT DC LABEL = gm0 GM(M0)
+.EXTRACT DC LABEL = Vthresh LV9(M1)
+.EXTRACT DC LABEL = Vthresh LV9(M0)
+.EXTRACT DC LABEL = Vthresh LV9(M2)
+
+* - Analysis Setup - DC
+.DC
+
+* --- Global Outputs
+.PROBE V SG
+.PROBE I SG
+
+* --- Waveform Outputs
+.PROBE DC I(M0.*) V(M0_G) V(M1_G) I(M1.*) I(M2.*)
+
+* --- Params
+.TEMP 27
+.PARAM I_bias=1.75m
+.PARAM W=70u

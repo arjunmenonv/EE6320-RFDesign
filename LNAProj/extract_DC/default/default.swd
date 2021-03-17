@@ -1,0 +1,33 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Tuesday, March 16, 2021 at 11:42:09 AM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.89
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <ver1_schem_default_default/EXT>gm1 -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange
+set row height -row 1 -init 213
+
+// ===== Create row #2 =====
+add waveform -color_index 1 <ver1_schem_default_default/EXT>uncox -transform "< none >"
+set axis properties -row 2 -axis Y1 -autorange
+set row height -row 2 -init 213
+
+// ===== Set X-axis data units =====
+set user scale I_BIAS 1.0 - -axis X
+
+// ====== Create the cursors, markers and measurements =====
+
+set active workspace Workspace1

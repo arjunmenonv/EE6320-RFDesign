@@ -1,0 +1,5 @@
+START report: Wed Mar 17 20:15:29 2021 
+** Note: (eldo-45)  The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.

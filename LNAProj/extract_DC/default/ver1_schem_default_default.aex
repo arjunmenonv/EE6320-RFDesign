@@ -1,0 +1,15 @@
+
+TITLE * Component: /home/arjunmenonv/Eldo_files/LNAProj/ver1_schem Viewpoint: default
+EXTRACT for DC ANALYSIS                        
+  TEMPERATURE =  27.0000     Celsius
+    *gm1 =  27.1187M      
+    *vgs =  513.6503M     
+    *uncox =  382.4267M     
+    *cgs1 = -203.5760F     
+    *cdb1 = -72.4975A      
+    *cgd1 = -28.0186F      
+    *gm2 =  26.8874M      
+    *gm0 =  25.4560M      
+    *vthresh =  347.8221M     
+    *vthresh =  348.3271M     
+    *vthresh =  348.3078M     

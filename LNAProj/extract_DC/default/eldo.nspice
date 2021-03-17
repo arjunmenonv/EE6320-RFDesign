@@ -1,0 +1,20 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Tue Mar 16 2021 at 19:49:11
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/LNAProj/ver1_schem
+*
+        M1 N$18 M1_G GROUND GROUND CMOSN L=0.16u W=W M=1
+        V1 N$21 GROUND DC 1.2V
+        R1 M0_G M1_G 10k NOISE=1
+        M2 N$21 N$21 N$18 N$18 CMOSN L=0.16u W=W M=1
+        M0 M0_G M0_G GROUND GROUND CMOSN L=0.16u W=W M=1
+        I1 N$21 M0_G DC I_bias
+*
+.end

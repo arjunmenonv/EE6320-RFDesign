@@ -1,0 +1,39 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Wednesday, March 17, 2021 at 8:15:15 PM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.89
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <LNA_test1_default_default/AC>V(OUT) -transform db
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange -grid on
+set user scale Magnitude 1.0 dB -row 1 -axis Y1
+set row height -row 1 -init 213
+
+// ===== Create row #2 =====
+add waveform -color_index 1 <LNA_test1_default_default/AC>SDB(1,1) -transform "< none >"
+set axis properties -row 2 -axis Y1 -autorange -grid on
+set user scale Magnitude 1.0 dB -row 2 -axis Y1
+set row height -row 2 -init 213
+
+// ===== Set X-axis data units =====
+set user scale Frequency 1.0 Hz -axis X
+
+// ====== Create the cursors, markers and measurements =====
+add cursor -name C1 -position 1.928723404255319E9 -base
+add cursor -name C2 -position 2.1021276595744681E9
+add cursor -name H1 -position 35.186440677966104 -base -horizontal -row 1 -axis Y1 -occurrence 0
+add cursor -name H2 -position 32.186440677966104 -horizontal -row 1 -axis Y1 -occurrence 1
+
+set active workspace Workspace1

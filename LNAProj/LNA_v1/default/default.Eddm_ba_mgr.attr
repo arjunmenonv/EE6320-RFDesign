@@ -1,0 +1,11 @@
+A 5 u Eddm_ba_mgr 60520cf5147c.03.7f.00.01.01.00.16.3f 2 2 2 0
+V v 1 1 60520cf5147c.03.7f.00.01.01.01.16.3f
+F f 1 "default.ba_1"
+V v 2 1 60524d8a421d.03.7f.00.01.01.00.16.3f
+F f 2 "default.ba_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 1 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default" 3 Eddm_design_viewpoint 60523d6c4c0c.03.7f.00.01.01.00.16.3f 60520cf50bb5.03.7f.00.01.01.00.16.3f
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default" 1 Eddm_design_viewpoint 60520cf50bb5.03.7f.00.01.01.01.16.3f 60520cf50bb5.03.7f.00.01.01.00.16.3f
