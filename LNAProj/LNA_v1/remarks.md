@@ -15,4 +15,10 @@ Current SotA:
 * for Ld = 3.1 nH, S11 < -10 dB for 1.92GHz < f < 2.1 GHz; Gain centre frequency = 1.96 GHz 
 
 
-Pending: NF analysis, parasitic resistance to be added to inductors, IIP3 analysis and report
+Pending: NF analysis, parasitic resistance to be added to inductors, IIP3 analysis and report..
+
+
+### Arjun Menon V, March 18, 2021 16:20
+
+Update ver 1.5 details
+
