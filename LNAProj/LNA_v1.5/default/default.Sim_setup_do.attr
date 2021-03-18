@@ -1,0 +1,19 @@
+A 5 u Sim_setup_do 60520cf51de0.03.7f.00.01.01.00.16.3f 68 2 204 0
+V v 66 1 60532c965daa.03.7f.00.01.01.00.57.d1
+F f 66 "default.db_66"
+V v 67 1 60532d567a62.03.7f.00.01.01.00.57.d1
+F f 67 "default.db_67"
+V v 68 1 60532e4b7184.03.7f.00.01.01.00.57.d1
+F f 68 "default.db_68"
+O 68
+R csdni 201 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 202 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default" 6 Eddm_design_viewpoint 6052e7fb91c3.03.7f.00.01.01.00.57.d1 60520cf50bb5.03.7f.00.01.01.00.16.3f
+R csdni 203 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file
+O 67
+R csdni 198 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 199 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default" 6 Eddm_design_viewpoint 6052e7fb91c3.03.7f.00.01.01.00.57.d1 60520cf50bb5.03.7f.00.01.01.00.16.3f
+R csdni 200 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file
+O 66
+R csdni 195 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 196 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default" 6 Eddm_design_viewpoint 6052e7fb91c3.03.7f.00.01.01.00.57.d1 60520cf50bb5.03.7f.00.01.01.00.16.3f
+R csdni 197 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file

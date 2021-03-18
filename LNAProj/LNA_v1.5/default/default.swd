@@ -1,0 +1,43 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Thursday, March 18, 2021 at 10:41:15 AM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ====== Create the expressions =====
+evalinwfc wf57=wf("<LNA_test1_default_default/AC>V(OUT)")/wf("<LNA_test1_default_default/AC>V(1)")
+
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.85
+
+// ===== Create row #1 =====
+add waveform -color_index 4 <LNA_test1_default_default/AC>SDB(1,1) -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange -grid on
+set user scale Magnitude 1.0 dB -row 1 -axis Y1
+set row height -row 1 -init 206
+
+// ===== Create row #2 =====
+add waveform -color_index 7 <calc>wf57 -transform db
+set axis properties -row 2 -axis Y1 -autorange -grid on
+set user scale Magnitude 1.0 dB -row 2 -axis Y1
+set row height -row 2 -init 206
+
+// ===== Set X-axis data units =====
+set user scale Frequency 1.0 Hz -axis X
+
+// ====== Create the cursors, markers and measurements =====
+add cursor -name C1 -position 1.9E9 -base
+add cursor -name C2 -position 2.0416666666666667E9
+add cursor -name H1 -position 34.75706214689266 -base -horizontal -row 2 -axis Y1 -occurrence 0
+add cursor -name H2 -position 31.757062146892657 -horizontal -row 2 -axis Y1 -occurrence 1
+
+set active workspace Workspace1

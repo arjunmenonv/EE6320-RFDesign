@@ -1,0 +1,16 @@
+START report: Thu Mar 18 10:39:03 2021 
+** Note: (eldo-45)  The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+** Warning: (eldo-1924)  In file "./LNA_test1_default_default.cir" line 19:
++   Unknown command ".PLOTR".
+** Note: (eldo-93)  Noise information: these devices are considered to be noiseless:
++      C1_PORT
++      L1_PORT
++      LS
++      VDD
++      ISRC
++      LD
++      LG
++      CCOUP

@@ -1,0 +1,41 @@
+* Component: /home/arjunmenonv/Eldo_files/LNAProj/LNA_test1 Viewpoint: default
+
+.options compat
+.INCLUDE "/home/arjunmenonv/Eldo_files/LNAProj/LNA_test1/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+.extract DC LABEL = gm1 GM(M1)
+.extract DC LABEL = cgs1 CGS(M1)
+.extract DC LABEL = cgd1 CGD(M1)
+.extract DC LABEL = vgs1 LX2(M1)
+.extract DC LABEL = vds1 LX3(M1)
+.plot AC sdb(1,1)
+.plot AC zr(1,1)
+.plot AC zi(1,1)
+.SNF INPUT = (V1) OUTPUT = Cload INPUT_TEMP = 27
+.PLOTR NOISE SNF
+
+* - Analysis Setup - DC
+.DC
+
+* - Analysis Setup - AC
+.AC LIN 1000 1.5gig 2.5gig
+
+* - Analysis Setup - AC Noise
+.NOISE V(OUT) V1 2 NOMOD=0
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
+.PARAM Ibias=2.8m
+.PARAM W=116u
+.PARAM Ld_val=3.23058n
+.PARAM Ls=381.872p
+.PARAM Lg=20n
+.PARAM tunefac=1.08
+.PARAM Ccoup=1n
