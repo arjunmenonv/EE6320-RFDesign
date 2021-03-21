@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 60564582aa6f.03.7f.00.01.01.00.20.f7 4 2 1 0
+V v 2 1 6056514824f9.03.7f.00.01.01.00.20.f7
+F o 0 ""
+V v 3 1 605656b41987.03.7f.00.01.01.00.20.f7
+F o 0 ""
+V v 4 1 6057314e6d46.03.7f.00.01.01.00.5e.ca
+F o 0 ""
+O 4
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_diff/schematic/sheet1" 3 mgc_sheet 6057314e6d3b.03.7f.00.01.01.00.5e.ca 60564582ab40.03.7f.00.01.01.00.20.f7
+O 3
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_diff/schematic/sheet1" 2 mgc_sheet 605656b4195c.03.7f.00.01.01.00.20.f7 60564582ab40.03.7f.00.01.01.00.20.f7
+O 2
+R cspuv 0 "/home/arjunmenonv/Eldo_files/LNAProj/LNA_diff/schematic/sheet1" 1 mgc_sheet 60564582ab40.03.7f.00.01.01.01.20.f7 60564582ab40.03.7f.00.01.01.00.20.f7

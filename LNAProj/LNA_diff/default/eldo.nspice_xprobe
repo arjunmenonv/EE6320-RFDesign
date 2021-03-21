@@ -1,0 +1,106 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell NMOS_4PIN
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell AC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_RESISTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_I_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell INDUCTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell JTRAN
+   Pin N1 N1
+   Pin N2 N2
+   Pin N3 N3
+   Pin N4 N4
+End Cell
+
+Cell #top#
+   Pin V+ V+
+   Pin bias BIAS
+   Pin V- V-
+   Net 1 1
+   Net out- OUT-
+   Net N$179 N$179
+   Net N$159 N$159
+   Net N$155 N$155
+   Net N$154 N$154
+   Net N$153 N$153
+   Net N$137 N$137
+   Net out+ OUT+
+   Net N$175 N$175
+   Net N$121 N$121
+   Net N$120 N$120
+   Net N$119 N$119
+   Net V+ V+
+   Net bias BIAS
+   Net V- V-
+   Global ground GROUND
+   Inst M5 M5 NMOS_4PIN
+   Inst M4 M4 NMOS_4PIN
+   Inst V2 V2 AC_V_SOURCE
+   Inst RPAR_LG RPAR_LG IDEAL_RESISTOR
+   Inst RPAR_LS RPAR_LS IDEAL_RESISTOR
+   Inst RTUNE RTUNE IDEAL_RESISTOR
+   Inst V1 V1 DC_V_SOURCE
+   Inst I1 I1 DC_I_SOURCE
+   Inst R5 R5 IDEAL_RESISTOR
+   Inst RD RD IDEAL_RESISTOR
+   Inst LD LD INDUCTOR
+   Inst LS LS INDUCTOR
+   Inst LG LG INDUCTOR
+   Inst CCOUP CCOUP IDEAL_CAPACITOR
+   Inst RB RB IDEAL_RESISTOR
+   Inst M2 M2 NMOS_4PIN
+   Inst M3 M3 NMOS_4PIN
+   Inst M1 M1 NMOS_4PIN
+   Inst Y1 Y1 JTRAN
+   Inst R3 R3 IDEAL_RESISTOR
+   Inst Cload CLOAD IDEAL_CAPACITOR
+   Inst R4 R4 IDEAL_RESISTOR
+   Inst R2 R2 IDEAL_RESISTOR
+   Inst R_add2 R_ADD2 IDEAL_RESISTOR
+   Inst R_add1 R_ADD1 IDEAL_RESISTOR
+   Inst L3 L3 INDUCTOR
+   Inst L2 L2 INDUCTOR
+   Inst L1 L1 INDUCTOR
+   Inst C1 C1 IDEAL_CAPACITOR
+   Inst R1 R1 IDEAL_RESISTOR
+End Cell
+

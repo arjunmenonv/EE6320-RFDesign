@@ -1,0 +1,51 @@
+* Component: /home/arjunmenonv/Eldo_files/LNAProj/LNA_v2 Viewpoint: default
+
+.options compat
+.option sst_spectrum=1
+.INCLUDE "/home/arjunmenonv/Eldo_files/LNAProj/LNA_v2/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+.extract DC LABEL = gm1 GM(M1)
+.extract DC LABEL = cgs1 CGS(M1)
+.extract DC LABEL = cgd1 CGD(M1)
+.extract DC LABEL = vgs1 LX2(M1)
+.extract DC LABEL = vds1 LX3(M1)
+.plot AC sdb(1,1)
+.plot AC zr(1,1)
+.plot AC zi(1,1)
+.SNF INPUT = (V1) OUTPUT = Cload INPUT_TEMP = 27
+.PLOT NOISE SNF
+.PLOT fsst vdb(1) vdb(out)
+.extract fsst label= PindBm1 YVAL(PdBm(V1), fund1)
+.extract fsst label= PoutdBm1 YVAL(PdBm(R_load), fund1)
+$.extract fsst label= PindBm3 YVAL(PdBm(V1), 2*fund1 - fund2)
+.extract fsst label= PoutdBm3 YVAL(PdBm(R_load), 2*fund1 - fund2)
+.extract fsst LABEL = IM3 (yval(PdBm(R_load), fund1) - yval(PdBm(R_load), 2*fund1-fund2))
+.extract fsst LABEL=IIP3 iipx(PdBm(V1), PdBm(R_load), fund1, 2*fund1 - fund2)
+
+* - Analysis Setup - DC
+.DC
+
+* - Analysis Setup - AC
+.AC LIN 1000 1.5gig 2.5gig
+
+* - Analysis Setup - AC Noise
+.NOISE V(OUT) V1 2 NOMOD=0
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
+.PARAM W=104u
+.PARAM Ibias=1.35m
+.PARAM Ld_val=3.08n
+.PARAM Ls=401.866p
+.PARAM Lg=28.2n
+.PARAM tunefac=1.1
+.PARAM Ccoup=5n
+.PARAM Lmin=0.12u
+.PARAM inpfac=0.65

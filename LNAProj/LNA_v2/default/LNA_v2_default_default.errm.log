@@ -1,0 +1,24 @@
+START report: Sun Mar 21 11:12:50 2021 
+** Note: (eldo-45)  The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+** Warning: (eldo-107)  NODE "N$18": Less than two connections.
+** Warning: (eldo-107)  NODE "N$17": Less than two connections.
+** Warning: (eldo-107)  NODE "N$16": Less than two connections.
+** Warning: (eldo-29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+** Warning: (eldo-240)  OBJECT "R2": This object is not connected to any other devices.
++   It is removed from the database.
+** Warning: (eldo-240)  OBJECT "R1": This object is not connected to any other devices.
++   It is removed from the database.
+** Warning: (eldo-1479)  Some .PLOT and .EXTRACT commands are declared for FSST analysis.
++   They are ignored because this analysis is not enabled.
+** Note: (eldo-93)  Noise information: these devices are considered to be noiseless:
++      C1_PORT
++      L1_PORT
++      VDD
++      ISRC
++      LD
++      LS
++      LG
++      CCOUP

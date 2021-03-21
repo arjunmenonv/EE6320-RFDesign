@@ -1,0 +1,27 @@
+Stack Trace Dump
+Program = /cad/tools/mentor/AMS162/aol/bin/eldo_64.exe (v8.1_1.2)
+Date = Sat Mar 20 17:31:33 2021
+# Level    PC      Function Name+offset  filename
+#====================================================
+#   0  0x0000000000c30530: <unknown @0xc30530>
+#   1  0x0000000000c305b8: eldo_dump_callstack+0x5f [eldo_64.exe]
+#   2  0x0000000000af67f8: FAULT_exit+0x236 [eldo_64.exe]
+#   3  0x0000000000af6a4d: <unknown @0xaf6a4d>
+#   4  0x00007fc76f1af3d0: +0x113d0 [libpthread.so.0]
+#   5  0x0000000001725112: affect_four_val+0x91 [eldo_64.exe]
+#   6  0x0000000001725a71: HB_is_XFOUR+0x3b7 [eldo_64.exe]
+#   7  0x0000000001687c1e: HB_is_signal+0x63 [eldo_64.exe]
+#   8  0x00000000009e8e6b: isi_or_v+0x5b4a [eldo_64.exe]
+#   9  0x00000000009901b2: icous+0x45e3 [eldo_64.exe]
+#  10  0x0000000000990c3c: sommtabl_after_machpart+0x2ea [eldo_64.exe]
+#  11  0x0000000000995f5c: sommtabl+0x252 [eldo_64.exe]
+#  12  0x0000000000887a68: eldo_generation2+0x363 [eldo_64.exe]
+#  13  0x0000000000887add: eldo_generation+0x19 [eldo_64.exe]
+#  14  0x0000000000888b6e: aldoprince+0x1003 [eldo_64.exe]
+#  15  0x0000000000866472: aeldosub+0x3d7 [eldo_64.exe]
+#  16  0x000000000086e037: aeldo+0x2cb [eldo_64.exe]
+#  17  0x00000000012cc1c1: main+0x71 [eldo_64.exe]
+#  18  0x00007fc76a711830: __libc_start_main+0xf0 [libc.so.6]
+#  19  0x000000000083ddf9: <unknown @0x83ddf9>
+# End of Stack Trace
+

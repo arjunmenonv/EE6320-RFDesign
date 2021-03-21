@@ -1,0 +1,9 @@
+
+TITLE * Component: /home/arjunmenonv/Eldo_files/LNAProj/LNA_v2 Viewpoint: default
+EXTRACT for DC ANALYSIS                        
+  TEMPERATURE =  27.0000     Celsius
+    *gm1 =  29.0209M      
+    *cgs1 = -220.4583F     
+    *cgd1 = -41.7395F      
+    *vgs1 =  520.3551M     
+    *vds1 =  671.6581M     

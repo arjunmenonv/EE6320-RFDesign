@@ -1,0 +1,46 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Sun Mar 21 2021 at 13:13:55
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/LNAProj/LNA_diff
+*
+        M5 OUT- N$137 N$154 N$154 CMOSN L=Lmin W=W M=1
+        M4 N$154 N$155 N$153 N$153 CMOSN L=Lmin W=W M=1
+        V2 1 N$175 RPORT=50 IPORT=1 DC 0V AC 1 0
+        RPAR_LG V+ N$179 {6.28319e11*Lg} NOISE=1
+        RPAR_LS N$119 GROUND {1.885e11*Ls} NOISE=1
+        RTUNE N$137 OUT+ {tunefac*1.885e11*Ld_val} NOISE=1
+        V1 N$137 GROUND DC 1.2V
+        I1 N$137 BIAS DC Ibias
+        R5 V- N$159 {6.28319e11*Lg} NOISE=1
+        RD OUT+ N$137 {1.885e11*Ld_val} NOISE=1
+        LD OUT+ N$137 Ld_val
+        LS GROUND N$119 Ls
+        LG V+ N$179 Lg
+        CCOUP N$121 N$179 Ccoup
+        RB BIAS N$121 50k NOISE=1
+        M2 OUT+ N$137 N$120 N$120 CMOSN L=Lmin W=W M=1
+        M3 BIAS BIAS GROUND GROUND CMOSN L=Lmin W=W M=1
+        M1 N$120 N$121 N$119 N$119 CMOSN L=Lmin W=W M=1
+        Y1 jtran 
++         PIN: 1 N$175 V+ V-
++         GENERIC:  A=1.41421
+        R3 N$137 OUT- {tunefac*1.885e11*Ld_val} NOISE=1
+        CLOAD OUT+ OUT- 1p
+        R4 N$153 GROUND {1.885e11*Ls} NOISE=1
+        R2 OUT- N$137 {1.885e11*Ld_val} NOISE=1
+        R_ADD2 N$159 V- {inpfac*6.28319e11*Lg} NOISE=1
+        R_ADD1 V+ N$179 {inpfac*6.28319e11*Lg} NOISE=1
+        L3 OUT- N$137 Ld_val
+        L2 GROUND N$153 Ls
+        L1 V- N$159 Lg
+        C1 N$155 N$159 Ccoup
+        R1 BIAS N$155 50k NOISE=1
+*
+.end

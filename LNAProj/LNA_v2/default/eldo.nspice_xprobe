@@ -1,0 +1,81 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell AC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_RESISTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_I_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell INDUCTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS_4PIN
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell #top#
+   Pin 1 1
+   Net N$23 N$23
+   Net N$19 N$19
+   Net N$18 N$18
+   Net N$17 N$17
+   Net N$16 N$16
+   Net out OUT
+   Net N$15 N$15
+   Net N$5 N$5
+   Net N$3 N$3
+   Net N$2 N$2
+   Net N$1 N$1
+   Net 1 1
+   Global ground GROUND
+   Inst V1 V1 AC_V_SOURCE
+   Inst R_add R_ADD IDEAL_RESISTOR
+   Inst R_load R_LOAD IDEAL_RESISTOR
+   Inst RPAR_LS RPAR_LS IDEAL_RESISTOR
+   Inst R2 R2 IDEAL_RESISTOR
+   Inst RPAR_LG RPAR_LG IDEAL_RESISTOR
+   Inst VDD VDD DC_V_SOURCE
+   Inst ISRC ISRC DC_I_SOURCE
+   Inst CLOAD CLOAD IDEAL_CAPACITOR
+   Inst R1 R1 IDEAL_RESISTOR
+   Inst LD LD INDUCTOR
+   Inst LS LS INDUCTOR
+   Inst LG LG INDUCTOR
+   Inst CCOUP CCOUP IDEAL_CAPACITOR
+   Inst RB RB IDEAL_RESISTOR
+   Inst M2 M2 NMOS_4PIN
+   Inst M0 M0 NMOS_4PIN
+   Inst M1 M1 NMOS_4PIN
+End Cell
+

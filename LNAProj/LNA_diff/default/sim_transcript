@@ -1,0 +1,207 @@
+
+Running eldo on arjun-Lenovo-ubuntu18
+with Eldo libraries :
+/cad/tools/mentor/AMS162/aol/lib/libeldoudm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos1_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoekv_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosp9_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldocsem_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos2_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos3_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobip_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldodio_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldojfet_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosoi_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos4_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoasitft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldohisim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldospmod_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopsp_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosvar_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldolegtft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosimkit_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomoto_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldost_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobnr_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldorockw_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopubhicum_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldotftsh_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobta_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofas_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofascm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosdsim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldowire_64.so
+/cad/tools/mentor/AMS162/aol/lib/libogr_64.so loaded.
+
+
+
+Copyright 1988 Mentor Graphics Corporation
+All Rights Reserved
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : arjunmenonv
+*** OS    : Ubuntu 16.04 LTS \n \l [VCO = aol]
+*** CPU   :
+    Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 8
+*** Freq  : 796.693MHz
+*** Cache : 6144 KB
+*** MEM   : 8058796 kB
+*** Date  : Sun Mar 21 13:13:55 2021
+
+*** Eldo VERSION : ELDO 16.2 patch1 (64 bits) Fri Jun 24 12:20:01 GMT 2016
+
+***** PRE-PROCESSING ...
+
+
+***** ANALYSIS ....
+
+Note 45: The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (MB):    399
+32 elements
+19 nodes
+1 input signals
+
+***> Parsing CPU TIME 0h 0mn 0s 020ms <***
+
+*** DATE: 21-Mar-2021 13:13:56
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/LNAProj/LNA_diff Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -1.200000e+00V and
+                                  2.400000e+00V
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:8 iterations FOR DC analysis
+1             0.0000     
+BIAS          520.3551M  
+N$119         0.0000     
+N$120         671.6581M  
+N$121         520.3551M  
+N$137         1.2000     
+N$153         0.0000     
+N$154         671.6581M  
+N$155         520.3551M  
+N$159         0.0000     
+N$175         0.0000     
+N$179         0.0000     
+OUT+          1.2000     
+OUT-          1.2000     
+V+            0.0000     
+V-            0.0000     
+
+   TOTAL POWER DISSIPATION:  4.4898M     WATTS
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost arjun-Lenovo-ubuntu18 -jwdbport 41811
+
+
+
+***>Current simulation completed
+
+
+ gm1 =  29.0209M      
+ cgs1 = -220.4583F     
+ cgd1 = -41.7395F      
+ vgs1 =  520.3551M     
+ tot_pow =  4.4898M     Watt 
+ p_m1 =  1.0599M     Watt 
+ p_m2 =  833.7563U   Watt 
+ p_m3 =  702.4794U   Watt 
+ p_m4 =  1.0599M     Watt 
+ p_m5 =  833.7563U   Watt 
+ p_rb =  0.0000      Watt 
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  400.4
+nb of components: 32
+nb of nodes: 19
+nb of MOS or BIP calls: 261
+Number of steps computed: 0
+
+***>CPU TIME 0s 000ms <***
+
+
+***>AC analysis starts
+Warning 22:  Non invertible matrix.
+Singularity can sometimes be removed by changing Eldo
+parameters PIVTOL and/or PIVREL
+See ASCII output file for detail about the singularity...
+Note 93: Noise information: these devices are considered to be noiseless:
++      C2_PORT
++      L2_PORT
++      V1
++      I1
++      LD
++      LS
++      LG
++      L3
++      L2
++      L1
++      Maximum number of printed devices reached. Please use .option limit_noisy_device_list = -1 to view the complete list of devices.
+
+
+
+***>AC analysis completed
+
+***>CPU TIME 0s 140ms <***
+
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  400.6
+nb of components: 32
+nb of nodes: 19
+nb of MOS or BIP calls: 273
+Number of steps computed: 0
+
+***>CPU TIME 0s 140ms <***
+
+***>MESSAGE SUMMARY: 2 notes
+
+***>GLOBAL CPU TIME 0s 180ms <***
+
+
+***>GLOBAL ELAPSED TIME 2s <***
+

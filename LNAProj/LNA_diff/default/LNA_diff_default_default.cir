@@ -1,0 +1,52 @@
+* Component: /home/arjunmenonv/Eldo_files/LNAProj/LNA_diff Viewpoint: default
+
+.options compat
+.INCLUDE "/home/arjunmenonv/Eldo_files/LNAProj/LNA_diff/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+$ DC extract commands
+.extract DC LABEL = gm1 GM(M1)
+.extract DC LABEL = cgs1 CGS(M1)
+.extract DC LABEL = cgd1 CGD(M1)
+.extract DC LABEL = vgs1 LX2(M1)
+$ Power Dissipated
+.extract DC LABEL = tot_pow POWER
+.extract DC LABEL = p_m1 POW(M1)
+.extract DC LABEL = p_m2 POW(M2)
+.extract DC LABEL = p_m3 POW(M3)
+.extract DC LABEL = p_m4 POW(M4)
+.extract DC LABEL = p_m5 POW(M5)
+.extract DC LABEL = p_Rb POW(RB)
+$ AC analysis commands
+.plot AC sdb(1,1)
+.plot AC zr(1,1)
+.plot AC zi(1,1)
+.SNF INPUT = (V1) OUTPUT = Cload INPUT_TEMP = 27
+.PLOT NOISE SNF
+
+* - Analysis Setup - DC
+.DC
+
+* - Analysis Setup - AC
+.AC LIN 1000 1.5gig 2.5gig
+
+* - Analysis Setup - AC Noise
+.NOISE V(OUT+, OUT-) V2 1 NOMOD=0
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
+.PARAM W=104u
+.PARAM Ibias=1.35m
+.PARAM Ls=401.866p
+.PARAM Lg=28.2n
+.PARAM Lmin=0.12u
+.PARAM tunefac=1.1
+.PARAM Ccoup=5n
+.PARAM Ld_val=3.08n
+.PARAM inpfac=0.65

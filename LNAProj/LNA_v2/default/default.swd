@@ -1,0 +1,30 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Sunday, March 21, 2021 at 11:03:00 AM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.89
+
+// ===== Create row #1 =====
+add waveform -color_index 1 <LNA_v2_default_default/AC>SNF_MAG -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange
+set row height -row 1 -init 426
+
+// ===== Set X-axis data units =====
+set user scale Frequency 1.0 Hz -axis X
+
+// ====== Create the cursors, markers and measurements =====
+add cursor -name C2 -position 2.1E9
+add cursor -name C1 -position 1.9E9 -base
+
+set active workspace Workspace1
