@@ -1,0 +1,13 @@
+START report: Thu Apr 29 16:57:52 2021 
+** Note: (eldo-45)  The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+** Warning: (eldo-1117)  In file "./VCO_v1_default_default.cir" line 35:
++   SST analysis Error: multiple .SST analysis specified (only one is allowed), previous one is ignored.
+** Warning: (eldo-1473)  COMMAND .PROBE V: The default analysis for .SST results is set to FSST.
++   If TSST results are required, the type of analysis must be explicitly given.
+** Warning: (eldo-1473)  COMMAND .PROBE SG: The default analysis for .SST results is set to FSST.
++   If TSST results are required, the type of analysis must be explicitly given.
+** Warning: (eldo-1479)  Some .EXTRACT commands are declared for DC analysis.
++   They are ignored because this analysis is not enabled.

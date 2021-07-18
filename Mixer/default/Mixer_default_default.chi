@@ -1,0 +1,1036 @@
+  Run on arjun-Lenovo-ubuntu18 (Linux 5.4.0-70-generic)
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : arjunmenonv
+*** OS    : Ubuntu 16.04 LTS \n \l [VCO = aol]
+*** CPU   :
+    Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 8
+*** Freq  : 3266.490MHz
+*** Cache : 6144 KB
+*** MEM   : 8058752 kB
+*** Date  : Sun Apr 18 15:52:32 2021
+
+*** Eldo VERSION : ELDO 16.2 patch1 (64 bits) Fri Jun 24 12:20:01 GMT 2016
+
+/cad/tools/mentor/AMS162/aol/bin/eldo_64.exe -i /home/arjunmenonv/Eldo_files/Mixer/default/Mixer_default_default.cir -64b -gwl JWDB -noconf 
+
+
+***** PRE-PROCESSING ...
+
+1*******18-Apr-21 *******  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  *******15:52:32******
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  
+    3  .OPTIONS compat
+    4  .OPTION sst_spectrum = 1
+    5  .INCLUDE "/home/arjunmenonv/Eldo_files/Mixer/default/netlist.spi"
+    6  ** including /home/arjunmenonv/Eldo_files/Mixer/default/netlist.spi
+    1  * ELDO netlist generated with ICnet by 'arjunmenonv' on Sun Apr 18 2021 at 15:52:31
+    2  
+    3  .CONNECT GROUND 0
+    4  
+    5  *
+    6  * Globals.
+    7  *
+    8  .GLOBAL GROUND
+    9  
+   10  *
+   11  * MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/Mixer
+   12  *
+   13          V3 V_LO- GROUND PULSE ( 0 V_LO {0.5/f_LO} 10p 10p {0.5*(1/f_LO -
+   14  +  20p)} {1/f_LO} )
+   15          C_FILT V_IF+ V_IF- C_POLE
+Note 45: The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+   16          V1 N$178 GROUND DC 1.2V
+   17          C1 V_IN+ V_RF+ 5N
+   18          R7 N$214 GROUND {1.885E11*L_DEG} NOISE=1
+   19          R1 N$178 V_IF- {(1+ GAMMA)*500} NOISE=1
+   20          R3 N$231 V_IN+ 1MEG NOISE=1
+   21          L2 N$211 GROUND {(1+ GAMMA)*L_DEG}
+   22          L1 N$214 GROUND {(1-GAMMA)*L_DEG}
+   23          R8 N$211 GROUND {1.885E11*L_DEG} NOISE=1
+   24          R4 N$231 V_IN- 1MEG NOISE=1
+   25          C2 V_IN- V_RF- 5N
+   26          M5 V_IF- V_LO+ N$29 N$29 CMOSN L={(1+ GAMMA)*L_DIFF} W={(1+ GAMMA)*W_DIFF}
+   27  +  M=1
+   28          R5 N$178 V_IF+ {(1- GAMMA)*500} NOISE=1
+   29          M2 V_IF- V_LO- V_D_TRAN V_D_TRAN CMOSN L={(1+ GAMMA)*L_DIFF} W={(1+
+   30  +  GAMMA)*W_DIFF} M=1
+   31          M3 V_D_TRAN V_IN+ N$214 N$214 CMOSN L={(1- GAMMA)*L_TRAN} W={(1-
+   32  +  GAMMA)*W_TRAN} M=1
+   33          V2 V_LO+ GROUND PULSE ( 0 V_LO 0 10p 10p {0.5*(1/f_LO - 20p)} {1/f_LO}
+   34  +  )
+   35          M1 V_IF+ V_LO+ V_D_TRAN V_D_TRAN CMOSN L={(1- GAMMA)*L_DIFF} W={(1-
+   36  +  GAMMA)*W_DIFF} M=1
+   37          M6 N$29 V_IN- N$211 N$211 CMOSN L={(1+ GAMMA)*L_TRAN} W={(1+ GAMMA)*W_TRAN}
+   38  +  M=1
+   39          V_RF- V_RF- GROUND RPORT=0 DC 0V AC -1m 0
+   40          I1 N$178 N$231 DC I_dc
+   41          M4 V_IF+ V_LO- N$29 N$29 CMOSN L={(1- GAMMA)*L_DIFF} W={(1- GAMMA)*W_DIFF}
+   42  +  M=1
+   43          V4 V_RF+ GROUND DC 0V AC 1 0
+   44          M9 N$231 N$231 GROUND GROUND CMOSN L=L_TRAN W=W_TRAN M=1
+   45  *
+   46  *end
+    6  .INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+    7  ** including /home/arjunmenonv/Eldo_files/ibm013.lib
+    1  * DATE: Aug 14/06
+    2  * LOT: T65U                  WAF: 1004
+    3  * Temperature_parameters=Default
+    4  .MODEL CMOSN NMOS (                                LEVEL   = 49
+    5  +VERSION = 3.1            TNOM    = 27             TOX     = 3.2E-9
+    6  +XJ      = 1E-7           NCH     = 2.3549E17      VTH0    = 0.0568751
+    7  +K1      = 0.3020081      K2      = -0.0126353     K3      = 1E-3
+    8  +K3B     = 4.0207582      W0      = 1E-7           NLX     = 1E-6
+    9  +DVT0W   = 0              DVT1W   = 0              DVT2W   = 0
+   10  +DVT0    = 1.0831955      DVT1    = 0.1843614      DVT2    = 0.2748043
+   11  +U0      = 434.7091169    UA      = -5.43709E-10   UB      = 3.701463E-18
+   12  +UC      = 4.393831E-10   VSAT    = 1.628587E5     A0      = 1.7574452
+   13  +AGS     = 0.9073285      B0      = 6.50197E-6     B1      = 5E-6
+   14  +KETA    = 0.0191837      A1      = 8.559091E-4    A2      = 0.3645109
+   15  +RDSW    = 150            PRWG    = 0.3557617      PRWB    = 0.1071626
+   16  +WR      = 1              WINT    = 1.783755E-8    LINT    = 1.034003E-8
+   17  +DWG     = -3.45492E-10   DWB     = 1.327182E-8    VOFF    = -0.0378384
+   18  +NFACTOR = 2.5            CIT     = 0              CDSC    = 2.4E-4
+   19  +CDSCD   = 0              CDSCB   = 0              ETA0    = 1.001562E-3
+   20  +ETAB    = 0.5140021      DSUB    = 4.098585E-6    PCLM    = 0.9707588
+   21  +PDIBLC1 = 0.9980936      PDIBLC2 = 0.01           PDIBLCB = 0.1
+   22  +DROUT   = 0.999035       PSCBE1  = 7.973198E10    PSCBE2  = 5.003614E-10
+   23  +PVAG    = 0.49933        DELTA   = 0.01           RSH     = 6.9
+   24  +MOBMOD  = 1              PRT     = 0              UTE     = -1.5
+   25  +KT1     = -0.11          KT1L    = 0              KT2     = 0.022
+   26  +UA1     = 4.31E-9        UB1     = -7.61E-18      UC1     = -5.6E-11
+   27  +AT      = 3.3E4          WL      = 0              WLN     = 1
+   28  +WW      = 0              WWN     = 1              WWL     = 0
+   29  +LL      = 0              LLN     = 1              LW      = 0
+   30  +LWN     = 1              LWL     = 0              CAPMOD  = 2
+   31  +XPART   = 0.5            CGDO    = 4.04E-10       CGSO    = 4.04E-10
+   32  +CGBO    = 1E-10          CJ      = 8.395926E-4    PB      = 0.8452447
+   33  +MJ      = 0.5347241      CJSW    = 2.43093E-10    PBSW    = 0.8
+   34  +MJSW    = 0.2862576      CJSWG   = 3.3E-10        PBSWG   = 0.8
+   35  +MJSWG   = 0.2862576      CF      = 0              PVTH0   = 2.009264E-4
+   36  +PRDSW   = 0              PK2     = 1.30501E-3     WKETA   = -1.227146E-3
+   37  +LKETA   = 6.04383E-3     PU0     = 4.4729531      PUA     = 1.66833E-11
+   38  +PUB     = 0              PVSAT   = 653.2294237    PETA0   = 1E-4
+   39  +PKETA   = -0.0204684      
+   40  +NOIMOD=2.0E+00		NOIA=1.3182567385564E+19
+   41  +NOIB=144543.977074592 NOIC=-1.24515784572817E-12	EF=0.92 EM=41000000 )
+   42  *
+   43  * flicker noise parameters above added manually from some other process
+   44  * 
+   45  .MODEL CMOSP PMOS (                                LEVEL   = 49
+   46  +VERSION = 3.1            TNOM    = 27             TOX     = 3.2E-9
+   47  +XJ      = 1E-7           NCH     = 4.1589E17      VTH0    = -0.2184693
+   48  +K1      = 0.251043       K2      = 0.0107986      K3      = 0.0939299
+   49  +K3B     = 14.287779      W0      = 1E-6           NLX     = 2.83073E-7
+   50  +DVT0W   = 0              DVT1W   = 0              DVT2W   = 0
+   51  +DVT0    = 8.124641E-4    DVT1    = 0.4664019      DVT2    = 0.1
+   52  +U0      = 111.8794007    UA      = 1.325562E-9    UB      = 3.221853E-21
+   53  +UC      = -1.73309E-11   VSAT    = 1.998045E5     A0      = 2
+   54  +AGS     = 0.7381126      B0      = 6.526983E-6    B1      = 5E-6
+   55  +KETA    = 0.0167193      A1      = 1.316147E-3    A2      = 0.4631991
+   56  +RDSW    = 106.4080613    PRWG    = -0.4993469     PRWB    = 0.5
+   57  +WR      = 1              WINT    = 0              LINT    = 7.66174E-9
+   58  +DWG     = 4.097251E-9    DWB     = -3.051451E-9   VOFF    = -0.1022829
+   59  +NFACTOR = 1.5332272      CIT     = 0              CDSC    = 2.4E-4
+   60  +CDSCD   = 0              CDSCB   = 0              ETA0    = 7.088326E-3
+   61  +ETAB    = -3.405323E-3   DSUB    = 1.642777E-3    PCLM    = 0.1688598
+   62  +PDIBLC1 = 1.428801E-3    PDIBLC2 = -9.415836E-6   PDIBLCB = -1E-3
+   63  +DROUT   = 3.682163E-6    PSCBE1  = 5.118004E9     PSCBE2  = 1.563874E-9
+   64  +PVAG    = 0.0183422      DELTA   = 0.01           RSH     = 6.9
+   65  +MOBMOD  = 1              PRT     = 0              UTE     = -1.5
+   66  +KT1     = -0.11          KT1L    = 0              KT2     = 0.022
+   67  +UA1     = 4.31E-9        UB1     = -7.61E-18      UC1     = -5.6E-11
+   68  +AT      = 3.3E4          WL      = 0              WLN     = 1
+   69  +WW      = 0              WWN     = 1              WWL     = 0
+   70  +LL      = 0              LLN     = 1              LW      = 0
+   71  +LWN     = 1              LWL     = 0              CAPMOD  = 2
+   72  +XPART   = 0.5            CGDO    = 3.88E-10       CGSO    = 3.88E-10
+   73  +CGBO    = 1E-10          CJ      = 1.174219E-3    PB      = 0.824378
+   74  +MJ      = 0.4102315      CJSW    = 1.318145E-10   PBSW    = 0.8340772
+   75  +MJSW    = 0.1            CJSWG   = 4.22E-10       PBSWG   = 0.8340772
+   76  +MJSWG   = 0.1            CF      = 0              PVTH0   = 5.093002E-5
+   77  +PRDSW   = 56.1585333     PK2     = 2.616923E-3    WKETA   = 0.0353839
+   78  +LKETA   = 0.0163711      PU0     = -1.0463987     PUA     = -5.37814E-11
+   79  +PUB     = 1.543904E-23   PVSAT   = -50            PETA0   = 1E-4
+   80  +PKETA   = -4.815139E-3    
+   81  +NOIMOD=2.0E+00		NOIA=3.57456993317604E+18		NOIB=2500
+   82  +NOIC=2.61260020285845E-11	EF=1.1388				EM=41000000 )
+   83  *
+   84  * flicker noise parameters above added manually from some other process
+   85  * 
+    7  .OPTION AEX
+    8  .OPTION ENGNOT
+    9  .OPTION LIMPROBE=10000.0
+   10  .OPTION NOASCII
+   11  
+   12  *.extract DC label = gm3 GM(M3)
+   13  *.extract DC label = Cgs3 CSG(M3)
+   14  *.extract DC label = vgs3 LX2(M3)
+   15  *.extract DC label = vds3 LX3(M3)
+   16  *.extract DC label = vt3 LV9(M3)
+   17  *.extract DC label = pow_bias POW(M9)
+   18  
+   19  
+   20  *.extract DC label = vgs1 LX2(M1)
+   21  *.extract DC label = vds1 LX3(M1)
+   22  *.extract DC label = vt1 LV9(M1)
+   23  
+   24  
+   25  
+   26  *.extract DC label = gds7 LX8(M7)
+   27  
+   28  *.sst fund1= f_LO nharm1= 7
+   29  *.sstxf v(v_if+, v_if-) dec 100 1e3 100meg xaxis= freq_command
+   30  *.plot sstxf xfdb(v_rf+, v_rf-).h(-1)
+   31  
+   32  *.sst fund1 = f_LO nharm1= 7 fund2= 2.01gig nharm2= 7
+   33  *.sstnoise v(v_if+, v_if-) dec 100 1e3 15meg xaxis= freq_command
+   34  *.snf input= (v_rf+, v_rf-) output= (C_filt) input_sideband= (-1, 0)
+   35  *.plot sstnoise snf
+   36  *.defwave nfig = (db(snf))
+   37  *.plot sstnoise w(nfig)
+   38  
+   39  *.param f1= 2gig
+   40  *.param f2= 2.001gig
+   41  *.sst fund1= f_LO nharm1= 15 fund2= f1 nharm2= 10 fund3= f2 nharm3= 10
+   42  *.extract fsst label = PoutdB yval(PdBm(R5, R1), f1 - f_LO)
+   43  *.extract fsst label = IM2 yval(PdBm(R5, R1), f2 - f1)
+   44  *.extract fsst label = IM3 yval(PdBm(R5, R1),2*f2 - f1 - f_LO)
+   45  *.extract fsst label = IIP2 (meas(PoutdB) - meas(IM2)) + A
+   46  *.extract fsst label = IIP3 0.5*(meas(PoutdB) - meas(IM3)) + A
+   47  *.extract fsst label = IIP3 iipx(PdBm(v_rf+, v_rf-), PdBm(R5, R1), f1 - f_LO, 2*f2 - f1 - f_LO)
+   48  
+   49  * - Analysis Setup - DC
+   50  .DC
+   51  
+   52  * - Analysis Setup - Trans
+   53  .TRAN 0.0 1u 0 100p
+   54  
+   55  * --- Global Outputs
+   56  .PROBE V SG
+   57  
+   58  * --- Params
+   59  .TEMP 27.0
+   60  .PARAM W_TRAN=500U
+   61  .PARAM L_TRAN=750N
+   62  .PARAM W_DIFF=200U
+   63  .PARAM L_DIFF=150N
+   64  .PARAM W_PMOS=20U
+   65  .PARAM L_PMOS=150N
+   66  .PARAM I_DC =1.35M
+   67  .PARAM F_LO=1.9995E9
+   68  .PARAM V_LO=0.7
+   69  .PARAM C_POLE=20P
+   70  .PARAM A=-50
+   71  .PARAM L_DEG=4N
+   72  .PARAM GAMMA=0
+   73  .STEP PARAM f_LO 1.9e9 2.1e9 INCR 0.1e9
+   74  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./Mixer_default_default.cir" line 53:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-08 s.
+Implicit port index  1 assigned to device V_RF-
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (MB):    399
+27 elements
+17 nodes 
+5 input signals
+Detail about objects and nodes found in the design, and simulated by Eldo:
+Number of nodes                     17
+Number of intrinsic nodes           2
+Number of input signals             5
+Number of resistors                 6
+Number of floating capacitors       3
+Number of grounded capacitors       0
+Number of inductors                 3
+Number of voltage sources           7
+Number of current sources           1
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       7
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  27
+Repartition per level of MOS
+  BSIM3V3 7
+
+
+0************************************************************************************************************************
+
+
+run number 1 out of 3
+   value of parameter F_LO is 1.900000E+09
+1************************************************************************************************************************
+
+*** DATE: 18-Apr-2021 15:52:33
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:33*****************
+
+0* Component: /home/arjunmenonv/Eldo_file
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: CMOSN
+ TYPE            N
+ LEVEL 53 : Bsim3v3 version 3.1
+ LIBRARY : /home/arjunmenonv/Eldo_files/ibm013.lib
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VER     = 3.1000E+00 -       MOBMOD  = 1          -       CAPMOD  = 2          -      
+VFBFLAG = 0          -       NQSMOD  = 0          -       NOIMOD  = 2          -      
+DERIV   = 1          -       BINFLAG = 0          -       PARAMCHK= 0          -      
+IIMOD   = 0          -       FNLEV   = 0          -       
+
+ * Threshold voltage related model parameters *
+   ------------------------------------------  
+VTH0    = 5.6875E-02 V       DELVTO  = 0.0        V       K1      = 3.0201E-01 V^1/2  
+K2      =-1.2635E-02 -       NCH     = 2.3549E+17 At/cm^3 K3      = 1.0000E-03 -      
+K3B     = 4.0208E+00 1/V     DVT0    = 1.0832E+00 -       DVT1    = 1.8436E-01 -      
+DVT2    = 2.7480E-01 1/V     DVT0W   = 0.0        -       DVT1W   = 0.0        1/m    
+DVT2W   = 0.0        1/V     DSUB    = 4.0986E-06 -       ETA0    = 1.0016E-03 -      
+ETAB    = 5.1400E-01 1/V     
+
+ * Subthreshold related parameters *
+   -------------------------------  
+NFACTOR = 2.5000E+00 -       CDSC    = 2.4000E-04 F/m^2   CDSCB   = 0.0        F/Vm^2 
+CDSCD   = 0.0        F/Vm^2  VOFF    =-3.7838E-02 V       CIT     = 0.0        F/m^2  
+
+ * Mobility related model parameters *
+   ---------------------------------  
+UA      =-5.4371E-10 m/V     UB      = 3.7015E-18 (m/V)^2 UC      = 4.3938E-10 m/V^2  
+U0      = 4.3471E-02 unit1   MULUO   = 1.0000E+00 -       
+
+ * Saturation related parameters *
+   -----------------------------  
+PCLM    = 9.7076E-01 -       KETA    = 1.9184E-02 1/V     DELTA   = 1.0000E-02 V      
+A0      = 1.7574E+00 -       A1      = 8.5591E-04 1/V     A2      = 3.6451E-01 -      
+B0      = 6.5020E-06 m       B1      = 5.0000E-06 m       PVAG    = 4.9933E-01 -      
+PDIBLC1 = 9.9809E-01 -       PDIBLC2 = 1.0000E-02 -       PDIBLCB = 1.0000E-01 1/V    
+DROUT   = 9.9904E-01 -       VSAT    = 1.6286E+05 m/s     PSCBE1  = 7.9732E+10 V/m    
+PSCBE2  = 5.0036E-10 m/V     PRWB    = 1.0716E-01 V^-1/2  PRWG    = 3.5576E-01 1/V    
+RDSW    = 1.5000E+02 Ohm.um  AGS     = 9.0733E-01 1/V     
+
+ * Geometry modulation related parameters *
+   --------------------------------------  
+LREF    = 0.0        m       WREF    = 0.0        m       LINT    = 1.0340E-08 m      
+DLC     = 1.0340E-08 m       LL      = 0.0        m       LW      = 0.0        m      
+LWL     = 0.0        m       LLN     = 1.0000E+00 -       LWN     = 1.0000E+00 -      
+WINT    = 1.7838E-08 m       DWC     = 1.7838E-08 m       WL      = 0.0        m      
+WW      = 0.0        m       WWL     = 0.0        m       WLN     = 1.0000E+00 -      
+WWN     = 1.0000E+00 -       WR      = 1.0000E+00 -       W0      = 1.0000E-07 m      
+DWG     =-3.4549E-10 m/V     DWB     = 1.3272E-08 m/V^1/2 
+
+ * Temperature effect parameters *
+   -----------------------------  
+UPDATEPHI= 0          -       AT      = 3.3000E+04 m/sec   UTE     =-1.5000E+00 -      
+KT1     =-1.1000E-01 V       KT2     = 2.2000E-02 -       KT1L    = 0.0        mV     
+UA1     = 4.3100E-09 m/V     UB1     =-7.6100E-18 (m/V)^2 UC1     =-5.6000E-11 m/V^2  
+PRT     = 0.0        Ohm.um  
+
+ * Overlap capacitance related and dynamic model parameters *
+   --------------------------------------------------------  
+XPART   = 5.0000E-01 -       CLC     = 1.0000E-07 m       CLE     = 6.0000E-01 -      
+CGDO    = 4.0400E-10 F/m     CGDL    = 0.0        F/m     CGSO    = 4.0400E-10 F/m    
+CGSL    = 0.0        F/m     CGBO    = 1.0000E-10 F/m     CKAPPA  = 6.0000E-01 V      
+CF      = 0.0        F/m     ELM     = 5.0000E+00 -       VFBCV   =-1.0000E+00 -      
+
+ * Substrate current related model parameters *
+   ----------------------------------------------
+ALPHA0  = 0.0        m/V     BETA0   = 3.0000E+01 V       
+
+ * Process and parameters extraction related model parameters *
+   ----------------------------------------------------------  
+TOX     = 3.2000E-09 m       DTOXCV  = 0.0        m       NGATE   = 0.0        At/cm^3
+NLX     = 1.0000E-06 m       XL      = 0.0        m       XW      = 0.0        m      
+ND      = 1.0000E+20 At/cm^3 
+
+ * Noise effect related model parameters *
+   -------------------------------------  
+THMLEV  = 0          -       FLKLEV  = 0          -       AF      = 1.0000E+00 -      
+KF      = 1.0000E-09 -       EF      = 9.2000E-01 -       NSTAR   = 2.0000E+14 -      
+FLKFLAG = 0.0        -       NOIFLAG = 0.0        -       NOIA    = 1.3183E+19 unit2  
+NOIB    = 1.4454E+05 1/V     NOIC    =-1.2452E-12 unit3   EM      = 4.1000E+07 V/m    
+WPEMOD  = 0.0        -       SCREF   = 1.0000E-06 m       KVTH0WE = 0.0        V      
+K2WE    = 0.0        -       KU0WE   = 0.0        -       WEB     = 0.0        -      
+WEC     = 0.0        -       GAMMA   = 6.6667E-01 -       
+
+ * Binning Parameters *
+   -------------------  
+BINUNIT = 1.0000E+00 -       
+* Display only non null Binning Parameters *
+PK2     = 1.3050E-03 -       PU0     = 4.4730E+00 -       PUA     = 1.6683E-11 -      
+PVSAT   = 6.5323E+02 -       LKETA   = 6.0438E-03 -       WKETA   =-1.2271E-03 -      
+PKETA   =-2.0468E-02 -       PETA0   = 1.0000E-04 -       PVTH0   = 2.0093E-04 -      
+   ------------------------------------------------------------------------  
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 1          -       GDSNOI  = 1.0000E+00 -       ACM     = 0          -      
+ALEV    = 0          -       RLEV    = 0          -       
+ * Access resistances related parameters *
+RD      = 0.0        Ohm     RS      = 0.0        Ohm     RSH     = 6.9000E+00 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 1.0340E-08 m       WD      = 1.7838E-08 m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 1.0000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 2          -       JS      = 0.0        A/m^2   JSW     = 0.0        A/m    
+IS      = 0.0        A       NJ      = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 3          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 8.3959E-04 F/m^2   CJSW    = 2.4309E-10 F/m    
+FC      = 0.0        -       MJ      = 5.3472E-01 -       MJSW    = 2.8626E-01 -      
+TT      = 0.0        s       PB      = 8.4524E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 3          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit4   TRS2    = 0.0        unit4   TRSH2   = 0.0        unit4  
+
+unit1 represents m^2/V/sec
+unit2 represents V^-1.m^-2
+unit3 represents V^-1.m^2
+unit4 represents 1/degK^2
+
+
+Searching Operating Point between -1.200000E+00V and
+                                  2.400000E+00V
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:33*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 OPTION SUMMARY                                         TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 100000   ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 1.00e-12 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+CPTIME         = UNDEF    STAT           = 0        TIMEDIV        = 0        
+SIMUDIV        = 10       SAVETIME       = 0        MAXTRAN        = 1000     
+MAXNODES       = 10000    MAXV           = 1.00e+13 LIMPROBE       = 10000    
+FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        TNOM           = 2.50e+01 
+TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 1        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 1        AEX            = 1        
+AEX            = 1        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        NOBIN          = 0        NOCOU          = 1        
+RMOS           = 0        NWRMOS         = 1        NONWRMOS       = 0        
+USEDEFAP       = 0        NOASCII        = 1        ASCII          = 0        
+MIXED          = 0        SWITCH         = 0        USERSWITCH     = 0        
+TIMING         = 0        MODWL          = 1        ULOGIC         = 0        
+
+
+
+
+***> DC CPU TIME 0s 010ms <***
+
+DC:7 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:33*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+
+
+
+***>CPU TIME 0s 010ms <***
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:33*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 160)
+CPU Usage                          :  93%               ( 93%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 300)
+CPU Usage                          :  95%               ( 94%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 440)
+CPU Usage                          :  93%               ( 94%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 590)
+CPU Usage                          : 100%               ( 95%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 730)
+CPU Usage                          :  94%               ( 95%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 880)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  1s  20)
+CPU Usage                          :  93%               ( 95%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 170)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 320)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 470)
+CPU Usage                          : 100%               ( 97%)
+
+
+
+
+***>CPU TIME 1s 470ms <***
+
+
+
+0************************************************************************************************************************
+
+
+run number 2 out of 3
+   value of parameter F_LO is 2.000000E+09
+1************************************************************************************************************************
+
+*** DATE: 18-Apr-2021 15:52:35
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:7 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:35*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+
+
+
+***>CPU TIME 0s 000ms <***
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:35*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 150)
+CPU Usage                          :  93%               ( 93%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 300)
+CPU Usage                          :  95%               ( 94%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 460)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 610)
+CPU Usage                          :  95%               ( 96%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 770)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 920)
+CPU Usage                          :  95%               ( 97%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s  70)
+CPU Usage                          :  95%               ( 97%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 220)
+CPU Usage                          :  95%               ( 96%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 380)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 530)
+CPU Usage                          :  96%               ( 97%)
+
+
+
+
+***>CPU TIME 1s 530ms <***
+
+
+
+0************************************************************************************************************************
+
+
+run number 3 out of 3
+   value of parameter F_LO is 2.100000E+09
+1************************************************************************************************************************
+
+*** DATE: 18-Apr-2021 15:52:36
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:7 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:36*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:36*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 ACCOUNTING INFORMATION                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     17
+Number of intrinsic nodes           2
+Number of input signals             5
+Number of resistors                 6
+Number of floating capacitors       3
+Number of grounded capacitors       0
+Number of inductors                 3
+Number of voltage sources           7
+Number of current sources           1
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       7
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  27
+Repartition per level of MOS
+  BSIM3V3 7
+Number of equations                 17
+Number of non-zero terms            47
+Percent Zeros                      83.74
+Evaluation of active devices        203
+Memory size (MB)                    401.1
+
+***>CPU TIME 0s 000ms <***
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:36*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+N$178         1.2000      N$211         0.0000      N$214         0.0000      
+N$231         331.3366M   N$29          1.9978U     V_D_TRAN      1.9978U     
+V_IF+         1.2000      V_IF-         1.2000      V_IN+         331.3366M   
+V_IN-         331.3366M   V_LO+         0.0000      V_LO-         0.0000      
+V_RF+         0.0000      V_RF-         0.0000      V_RF-:INTR    0.0000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V3         0.0000       0.0000       0.0000      
+V1        -1.3501M      1.2000      -1.6201M     
+V2         0.0000       0.0000       0.0000      
+V_RF-      0.0000       0.0000       0.0000      
+I1         1.3500M      868.6634M    1.1727M     
+V4         0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 160)
+CPU Usage                          :  95%               ( 95%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 320)
+CPU Usage                          :  97%               ( 96%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 480)
+CPU Usage                          :  96%               ( 96%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 630)
+CPU Usage                          :  91%               ( 95%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  0s 800)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 960)
+CPU Usage                          :  97%               ( 97%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 120)
+CPU Usage                          :  97%               ( 97%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  1s 290)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 450)
+CPU Usage                          :  98%               ( 97%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 610)
+CPU Usage                          :  98%               ( 97%)
+
+
+
+1***************18-Apr-2021 ***********************  ELDO 16.2 patch1 (64 bits)  (v8.1_1.2)  ***********************15:52:36*****************
+
+0* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+0****                 ACCOUNTING INFORMATION                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     17
+Number of intrinsic nodes           2
+Number of input signals             5
+Number of resistors                 6
+Number of floating capacitors       3
+Number of grounded capacitors       0
+Number of inductors                 3
+Number of voltage sources           7
+Number of current sources           1
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       7
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  27
+Repartition per level of MOS
+  BSIM3V3 7
+Number of equations                 17
+Number of non-zero terms            65
+Percent Zeros                      77.51
+Number of Newton iterations         134390
+Average number of Newton iterations 2.909
+Number of accepted time steps       46201
+Number of rejected time steps       0
+      due to LTE                    0
+      due to Newton                 0
+Evaluation of active devices        462339
+Memory size (MB)                    401.1
+
+***>CPU TIME 1s 610ms <***
+
+***>MESSAGE SUMMARY: 1 warning, 1 note
+
+***>GLOBAL CPU TIME 4s 640ms <***
+
+
+***>GLOBAL ELAPSED TIME 6s <***
+
+
+  Job started at 18-Apr-2021 15:52:32
+  Job end at     18-Apr-2021 15:52:38
+
+  Run on arjun-Lenovo-ubuntu18 (Linux 5.4.0-70-generic)
+

@@ -1,0 +1,19 @@
+A 5 u Sim_setup_do 6079c9b1ec45.03.7f.00.01.01.00.63.2a 139 2 417 0
+V v 137 1 607c55c96d47.03.7f.00.01.01.00.26.bf
+F f 137 "default.db_137"
+V v 138 1 607c718812eb.03.7f.00.01.01.00.26.bf
+F f 138 "default.db_138"
+V v 139 1 607c7c49b0c7.03.7f.00.01.01.00.26.bf
+F f 139 "default.db_139"
+O 139
+R csdni 414 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 415 "/home/arjunmenonv/Eldo_files/Mixer/default" 8 Eddm_design_viewpoint 607c204caa5d.03.7f.00.01.01.00.26.bf 6079c9b169a9.03.7f.00.01.01.00.63.2a
+R csdni 416 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file
+O 138
+R csdni 411 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 412 "/home/arjunmenonv/Eldo_files/Mixer/default" 8 Eddm_design_viewpoint 607c204caa5d.03.7f.00.01.01.00.26.bf 6079c9b169a9.03.7f.00.01.01.00.63.2a
+R csdni 413 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file
+O 137
+R csdni 408 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 409 "/home/arjunmenonv/Eldo_files/Mixer/default" 8 Eddm_design_viewpoint 607c204caa5d.03.7f.00.01.01.00.26.bf 6079c9b169a9.03.7f.00.01.01.00.63.2a
+R csdni 410 "/home/arjunmenonv/Eldo_files/ibm013.lib" 1 Mgc_file

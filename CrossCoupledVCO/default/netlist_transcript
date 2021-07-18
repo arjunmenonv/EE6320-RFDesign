@@ -1,0 +1,38 @@
+
+//  Pyxis Netlister  v10.5_7.0  Mon Jul 10 02:28:08 PDT 2017
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -odir /cad/tools/mentor/Pyxis_v10.5_7_p201706034/tmp/home/arjunmenonv/Eldo_files/VCO/VCO_v1/default /home/arjunmenonv/Eldo_files/VCO/VCO_v1/default
+
+// **** Reading </home/arjunmenonv/Eldo_files/VCO/VCO_v1/default> for ELDO netlist ****
+
+// Checking 1 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/cad/tools/mentor/Pyxis_v10.5_7_p201706034/mgc_icstd_lib/global.ncf' succeeded.
+// NOTE: There is no part interface for the top level schematic.  The external nets in the schematic
+//       are being scanned to create the pin names for the top level subckt.
+Processing [/home/arjunmenonv/Eldo_files/VCO/VCO_v1] [VCO_v1/VCO_v1] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_SOURCES_LIB/dc_i_source] [dc_i_source/dc_i_source] [SPICE=I] (NCF entry line: 597 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_DEVICE_LIB/nmos_4pin] [nmos_4pin/nmos_4pin] [SPICE=M] (NCF entry line: 72 file: $NCF_GLOBAL) (NCF entry line: 170 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_DEVICE_LIB/ideal_resistor] [ideal_resistor/ideal_resistor] [SPICE=R] (NCF entry line: 72 file: $NCF_GLOBAL) (NCF entry line: 77 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_DEVICE_LIB/inductor] [inductor/inductor] [SPICE=L] (NCF entry line: 72 file: $NCF_GLOBAL) (NCF entry line: 243 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_DEVICE_LIB/ideal_capacitor] [ideal_capacitor/ideal_capacitor] [SPICE=C] (NCF entry line: 72 file: $NCF_GLOBAL) (NCF entry line: 126 file: $NCF_GLOBAL)
+Primitive [$MGC_IC_SOURCES_LIB/dc_v_source] [dc_v_source/dc_v_source] [SPICE=V] (NCF entry line: 565 file: $NCF_GLOBAL)
+
+**** Writing </home/arjunmenonv/Eldo_files/VCO/VCO_v1/default> netlist for ELDO ****
+
+Number of cells: 7
+Number of primitive instances: 31
+
+Done...
+// Registration file '/cad/tools/mentor/Pyxis_v10.5_7_p201706034/mgc_icstd_lib/global.ncf' closed.

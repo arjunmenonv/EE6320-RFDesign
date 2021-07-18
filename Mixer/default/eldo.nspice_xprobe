@@ -1,0 +1,97 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell PULSE_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_RESISTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell INDUCTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS_4PIN
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell AC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_I_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell #top#
+   Pin v_if+ V_IF+
+   Pin v_if- V_IF-
+   Pin V_LO+ V_LO+
+   Pin V_LO- V_LO-
+   Net v_rf- V_RF-
+   Net v_rf+ V_RF+
+   Net v_in+ V_IN+
+   Net N$231 N$231
+   Net N$214 N$214
+   Net N$211 N$211
+   Net v_in- V_IN-
+   Net N$178 N$178
+   Net V_d_tran V_D_TRAN
+   Net N$29 N$29
+   Net V_LO+ V_LO+
+   Net V_LO- V_LO-
+   Net v_if+ V_IF+
+   Net v_if- V_IF-
+   Global ground GROUND
+   Inst V3 V3 PULSE_V_SOURCE
+   Inst C_filt C_FILT IDEAL_CAPACITOR
+   Inst V1 V1 DC_V_SOURCE
+   Inst C1 C1 IDEAL_CAPACITOR
+   Inst R7 R7 IDEAL_RESISTOR
+   Inst R1 R1 IDEAL_RESISTOR
+   Inst R3 R3 IDEAL_RESISTOR
+   Inst L2 L2 INDUCTOR
+   Inst L1 L1 INDUCTOR
+   Inst R8 R8 IDEAL_RESISTOR
+   Inst R4 R4 IDEAL_RESISTOR
+   Inst C2 C2 IDEAL_CAPACITOR
+   Inst M5 M5 NMOS_4PIN
+   Inst R5 R5 IDEAL_RESISTOR
+   Inst M2 M2 NMOS_4PIN
+   Inst M3 M3 NMOS_4PIN
+   Inst V2 V2 PULSE_V_SOURCE
+   Inst M1 M1 NMOS_4PIN
+   Inst M6 M6 NMOS_4PIN
+   Inst v_rf- V_RF- AC_V_SOURCE
+   Inst I1 I1 DC_I_SOURCE
+   Inst M4 M4 NMOS_4PIN
+   Inst V4 V4 AC_V_SOURCE
+   Inst M9 M9 NMOS_4PIN
+End Cell
+

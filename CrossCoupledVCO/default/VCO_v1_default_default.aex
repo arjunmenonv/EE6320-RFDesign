@@ -1,0 +1,30 @@
+
+TITLE * Component: /home/arjunmenonv/Eldo_files/VCO/VCO_v1 Viewpoint: default
+EXTRACT for DC ANALYSIS                        
+  TEMPERATURE =  27.0000     Celsius
+    *gm_bias =  17.6278M      
+    *cgs_bias = -56.5261P      
+    *vgs_bias =  486.1122M     
+    *vds_bias =  621.3563M     
+    *gm_cc =  24.2464M      
+    *cgs_cc = -103.5706F     
+    *vgs_cc =  578.6437M     
+    *vds_cc =  578.6437M     
+    *bias_pow =  1.7014M     Watt 
+
+EXTRACT for DC ANALYSIS                        
+  TEMPERATURE =  27.0000     Celsius
+    *gm_bias =  17.6278M      
+    *cgs_bias = -56.5261P      
+    *vgs_bias =  486.1122M     
+    *vds_bias =  621.3562M     
+    *gm_cc =  24.2465M      
+    *cgs_cc = -103.5706F     
+    *vgs_cc =  578.6438M     
+    *vds_cc =  578.6438M     
+    *bias_pow =  1.7014M     Watt 
+
+EXTRACT for SST results FSST 
+  TEMPERATURE =  27.0000     Celsius
+    *fosc =  4.2001G       
+    *fund_osc =  4.2001G       

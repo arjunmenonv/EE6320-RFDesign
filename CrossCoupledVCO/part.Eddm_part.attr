@@ -1,0 +1,6 @@
+A 5 u Eddm_part 6089299fe6d1.03.7f.00.01.01.00.7e.0c 1 2 1 0
+V v 1 1 6089299fe6d1.03.7f.00.01.01.01.7e.0c
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic" 1 mgc_schematic 60890e81abe8.03.7f.00.01.01.01.7e.0c 60890e81abe8.03.7f.00.01.01.00.7e.0c

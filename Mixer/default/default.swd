@@ -1,0 +1,29 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Sunday, April 18, 2021 at 2:07:55 PM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.89
+
+// ===== Create row #1 =====
+add waveform -color_index 0 -expand <Mixer_default_default/SSTXF>XFDB(V_RF+,V_RF-,V_RF-).H(-1) -transform "< none >"
+set axis properties -axis X -scale log10
+set axis properties -row 1 -axis Y1 -autorange -grid on
+set user scale Magnitude 1.0 dB -row 1 -axis Y1
+set row height -row 1 -init 426
+
+// ===== Set X-axis data units =====
+set user scale Frequency 1.0 Hz -axis X
+
+// ====== Create the cursors, markers and measurements =====
+
+set active workspace Workspace1

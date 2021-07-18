@@ -1,0 +1,45 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Thu Apr 29 2021 at 16:57:52
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/VCO/VCO_v1
+*
+        I1 V_DD N$65 DC I_tail
+        M+_2 N$69 VB2 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        R3 V_OUT- V_DD {3.7699e11*L_tank} NOISE=1
+        R2 V_OUT+ V_DD {3.7699e11*L_tank} NOISE=1
+        L2 V_OUT- V_DD L_tank
+        L1 V_OUT+ V_DD L_tank
+        C2 V_DD V_OUT- C_nom
+        V_BIT2 VB2 GROUND DC {bit2*V_dd}
+        V_BIT1 VB1 GROUND DC {bit1*V_dd}
+        V_BIT0 VB0 GROUND DC {bit0*V_dd}
+        C+_1 V_OUT+ N$71 {2*Co}
+        M-_0 N$80 VB0 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        M-_1 N$78 VB1 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        M-_2 N$76 VB2 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        M1 V_OUT+ V_OUT- N$49 N$49 CMOSN L=L_cc W=W_cc M=1
+        M+_1 N$71 VB1 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        M2 V_OUT- V_OUT+ N$49 N$49 CMOSN L=L_cc W=W_cc M=1
+        M_VARAC- V_CTRL V_OUT- V_CTRL V_CTRL CMOSN L=L_var W=W_var M=1
+        C1 V_DD V_OUT+ C_nom
+        M+_0 N$73 VB0 GROUND GROUND CMOSN L=L_sw W=W_sw M=1
+        VARAC_CTRL V_CTRL GROUND DC V_cont
+        M_VARAC+ V_CTRL V_OUT+ V_CTRL V_CTRL CMOSN L=L_var W=W_var M=1
+        C-_1 N$78 V_OUT- {2*Co}
+        C-_0 N$80 V_OUT- Co
+        C-_2 N$76 V_OUT- {4*Co}
+        M3 N$49 V_B GROUND GROUND CMOSN L=L_b W=W_b M=1
+        M4 N$65 N$65 GROUND GROUND CMOSN L=L_b W=W_b M=1
+        C+_0 V_OUT+ N$73 Co
+        C+_2 V_OUT+ N$69 {4*Co}
+        R1 N$65 V_B 50k NOISE=1
+        V1 V_DD GROUND DC V_dd
+*
+.end

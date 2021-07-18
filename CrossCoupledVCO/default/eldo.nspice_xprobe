@@ -1,0 +1,93 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell DC_I_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS_4PIN
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell IDEAL_RESISTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell INDUCTOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell #top#
+   Pin V_b V_B
+   Net V_out+ V_OUT+
+   Net V_ctrl V_CTRL
+   Net Vb2 VB2
+   Net Vb1 VB1
+   Net Vb0 VB0
+   Net N$78 N$78
+   Net N$80 N$80
+   Net N$76 N$76
+   Net N$73 N$73
+   Net N$71 N$71
+   Net N$69 N$69
+   Net V_DD V_DD
+   Net N$65 N$65
+   Net V_out- V_OUT-
+   Net N$49 N$49
+   Net V_b V_B
+   Global ground GROUND
+   Inst I1 I1 DC_I_SOURCE
+   Inst M+_2 M+_2 NMOS_4PIN
+   Inst R3 R3 IDEAL_RESISTOR
+   Inst R2 R2 IDEAL_RESISTOR
+   Inst L2 L2 INDUCTOR
+   Inst L1 L1 INDUCTOR
+   Inst C2 C2 IDEAL_CAPACITOR
+   Inst V_bit2 V_BIT2 DC_V_SOURCE
+   Inst V_bit1 V_BIT1 DC_V_SOURCE
+   Inst V_bit0 V_BIT0 DC_V_SOURCE
+   Inst C+_1 C+_1 IDEAL_CAPACITOR
+   Inst M-_0 M-_0 NMOS_4PIN
+   Inst M-_1 M-_1 NMOS_4PIN
+   Inst M-_2 M-_2 NMOS_4PIN
+   Inst M1 M1 NMOS_4PIN
+   Inst M+_1 M+_1 NMOS_4PIN
+   Inst M2 M2 NMOS_4PIN
+   Inst varac- M_VARAC- NMOS_4PIN
+   Inst C1 C1 IDEAL_CAPACITOR
+   Inst M+_0 M+_0 NMOS_4PIN
+   Inst varac_ctrl VARAC_CTRL DC_V_SOURCE
+   Inst varac+ M_VARAC+ NMOS_4PIN
+   Inst C-_1 C-_1 IDEAL_CAPACITOR
+   Inst C-_0 C-_0 IDEAL_CAPACITOR
+   Inst C-_2 C-_2 IDEAL_CAPACITOR
+   Inst M3 M3 NMOS_4PIN
+   Inst M4 M4 NMOS_4PIN
+   Inst C+_0 C+_0 IDEAL_CAPACITOR
+   Inst C+_2 C+_2 IDEAL_CAPACITOR
+   Inst R1 R1 IDEAL_RESISTOR
+   Inst V1 V1 DC_V_SOURCE
+End Cell
+

@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 6079a78d9294.03.7f.00.01.01.00.63.2a 123 2 1 0
+V v 121 1 607c4ddad6eb.03.7f.00.01.01.00.26.bf
+F o 0 ""
+V v 122 1 607c4e1c3b8a.03.7f.00.01.01.00.26.bf
+F o 0 ""
+V v 123 1 607c55961cb2.03.7f.00.01.01.00.26.bf
+F o 0 ""
+O 123
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Mixer/schematic/sheet1" 122 mgc_sheet 607c55961ca5.03.7f.00.01.01.00.26.bf 6079a78d9388.03.7f.00.01.01.00.63.2a
+O 122
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Mixer/schematic/sheet1" 121 mgc_sheet 607c4e1c3b7d.03.7f.00.01.01.00.26.bf 6079a78d9388.03.7f.00.01.01.00.63.2a
+O 121
+R cspuv 0 "/home/arjunmenonv/Eldo_files/Mixer/schematic/sheet1" 120 mgc_sheet 607c4ddad6dd.03.7f.00.01.01.00.26.bf 6079a78d9388.03.7f.00.01.01.00.63.2a

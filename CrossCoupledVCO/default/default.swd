@@ -1,0 +1,30 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Thursday, April 29, 2021 at 5:02:36 PM UTC
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -maximized -divider 0.95
+
+// ===== Create row #1 =====
+add waveform -color_index 1 -expand <calc>wf25 -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange -grid on
+set row height -row 1 -init 426
+
+// ===== Set X-axis data units =====
+set user scale V_CONT 1.0 - -axis X
+
+// ====== Create the cursors, markers and measurements =====
+add cursor -name C1 -position 0.2 -base
+add cursor -name C2 -position 1.1
+
+set active workspace Workspace1

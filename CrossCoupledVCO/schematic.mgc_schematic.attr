@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 60890e81abe8.03.7f.00.01.01.00.7e.0c 19 2 1 0
+V v 17 1 608ac674a03f.03.7f.00.01.01.00.6e.43
+F o 0 ""
+V v 18 1 608ac77ea2e5.03.7f.00.01.01.00.6e.43
+F o 0 ""
+V v 19 1 608ac8c1c02f.03.7f.00.01.01.00.6e.43
+F o 0 ""
+O 19
+R cspuv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic/sheet1" 18 mgc_sheet 608ac8c1c024.03.7f.00.01.01.00.6e.43 60890e81ace4.03.7f.00.01.01.00.7e.0c
+O 18
+R cspuv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic/sheet1" 17 mgc_sheet 608ac77ea2db.03.7f.00.01.01.00.6e.43 60890e81ace4.03.7f.00.01.01.00.7e.0c
+O 17
+R cspuv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic/sheet1" 16 mgc_sheet 608ac674a033.03.7f.00.01.01.00.6e.43 60890e81ace4.03.7f.00.01.01.00.7e.0c

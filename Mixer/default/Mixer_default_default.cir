@@ -1,0 +1,73 @@
+* Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+.options compat
+.option sst_spectrum = 1
+.INCLUDE "/home/arjunmenonv/Eldo_files/Mixer/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+$ DC Analysis commands
+*.extract DC label = gm3 GM(M3)
+*.extract DC label = Cgs3 CSG(M3)
+*.extract DC label = vgs3 LX2(M3)
+*.extract DC label = vds3 LX3(M3)
+*.extract DC label = vt3 LV9(M3)
+*.extract DC label = pow_bias POW(M9)
+$.extract DC label = gm1 GM(M1)
+$.extract DC label = Cgs1 CSG(M1)
+*.extract DC label = vgs1 LX2(M1)
+*.extract DC label = vds1 LX3(M1)
+*.extract DC label = vt1 LV9(M1)
+$.extract DC label = gm7 GM(M7)
+$.extract DC label = vgs7 LX2(M7)
+$.extract DC label = vds7 LX3(M7)
+*.extract DC label = gds7 LX8(M7)
+$ Steady State AC Analysis
+*.sst fund1= f_LO nharm1= 7
+*.sstxf v(v_if+, v_if-) dec 100 1e3 100meg xaxis= freq_command
+*.plot sstxf xfdb(v_rf+, v_rf-).h(-1)
+$ SST Noise Analysis
+*.sst fund1 = f_LO nharm1= 7 fund2= 2.01gig nharm2= 7
+*.sstnoise v(v_if+, v_if-) dec 100 1e3 15meg xaxis= freq_command
+*.snf input= (v_rf+, v_rf-) output= (C_filt) input_sideband= (-1, 0)
+*.plot sstnoise snf
+*.defwave nfig = (db(snf))
+*.plot sstnoise w(nfig)
+$ IIP3 computation
+*.param f1= 2gig
+*.param f2= 2.001gig
+*.sst fund1= f_LO nharm1= 15 fund2= f1 nharm2= 10 fund3= f2 nharm3= 10
+*.extract fsst label = PoutdB yval(PdBm(R5, R1), f1 - f_LO)
+*.extract fsst label = IM2 yval(PdBm(R5, R1), f2 - f1)
+*.extract fsst label = IM3 yval(PdBm(R5, R1),2*f2 - f1 - f_LO)
+*.extract fsst label = IIP2 (meas(PoutdB) - meas(IM2)) + A
+*.extract fsst label = IIP3 0.5*(meas(PoutdB) - meas(IM3)) + A
+*.extract fsst label = IIP3 iipx(PdBm(v_rf+, v_rf-), PdBm(R5, R1), f1 - f_LO, 2*f2 - f1 - f_LO)
+
+* - Analysis Setup - DC
+.DC
+
+* - Analysis Setup - Trans
+.TRAN 0.0 1u 0 100p
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
+.PARAM W_tran=500u
+.PARAM L_tran=750n
+.PARAM W_diff=200u
+.PARAM L_diff=150n
+.PARAM W_pmos=20u
+.PARAM L_pmos=150n
+.PARAM I_dc =1.35m
+.PARAM f_LO=1.9995e9
+.PARAM V_LO=0.7
+.PARAM C_pole=20p
+.PARAM A=-50
+.PARAM L_deg=4n
+.PARAM gamma=0
+.STEP PARAM f_LO 1.9e9 2.1e9 INCR 0.1e9

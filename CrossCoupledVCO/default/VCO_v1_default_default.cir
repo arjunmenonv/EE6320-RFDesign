@@ -1,0 +1,63 @@
+* Component: /home/arjunmenonv/Eldo_files/VCO/VCO_v1 Viewpoint: default
+
+.options compat
+.INCLUDE "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/default/netlist.spi"
+.INCLUDE "/home/arjunmenonv/Eldo_files/ibm013.lib"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+.extract DC label = gm_bias GM(M3)
+.extract DC label = Cgs_bias LX20(M3)
+.extract DC label = vgs_bias LX2(M3)
+.extract DC label = vds_bias LX3(M3)
+.extract DC label = gm_cc GM(M1)
+.extract DC label = Cgs_cc LX20(M1)
+.extract DC label = vgs_cc LX2(M1)
+.extract DC label = vds_cc LX3(M1)
+.extract DC label = bias_pow POW(M4)
+* Command to provide initial voltage across caps to start off oscillations in tran sim
+*.ic v(v_out+) = 1.201v
+*.plot tran v(v_out+, v_out-)
+.sst oscil fund_osc_guess1 = 4.2gig nharm_osc1= 10
+.plot fsst vdb(V_out+, V_out-)
+.plot tsst v(v_out+, v_out-) v(v_out+) v(v_out-)
+.extract fsst label = fosc fund_osc
+* Phase Noise
+*.sstnoise v(v_out+, v_out-) harm(1) dec 200 100 100meg
+*.plot sstnoise db(sphi)
+
+* - Analysis Setup - DCOP
+.OPTION PROBEOP2
+.OP
+
+* - Analysis Setup - SST
+.SST OSCIL FUND_OSC_GUESS1=4.2G NHARM_OSC1=10
+.SSTPROBE V_OUT+ V_OUT- FUND_OSC
+.EXTRACT FSST FUND_OSC
+.SAVE SST
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 27.0
+.PARAM V_dd=1.2
+.PARAM I_tail=3.5m
+.PARAM W_b=600u
+.PARAM L_b=6u
+.PARAM W_cc=50u
+.PARAM L_cc=0.12u
+.PARAM L_tank=1.3n
+.PARAM C_nom=0.55p
+.PARAM W_var=135u
+.PARAM L_var=0.18u
+.PARAM W_sw=75u
+.PARAM L_sw=0.12u
+.PARAM Co=0.06p
+.PARAM bit2=0
+.PARAM bit1=0
+.PARAM bit0=0
+.PARAM V_cont=0.935
+.PARAM L_filt=30p
+.PARAM C_filt=13.193p

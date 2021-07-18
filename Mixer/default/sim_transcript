@@ -1,0 +1,498 @@
+
+Running eldo on arjun-Lenovo-ubuntu18
+with Eldo libraries :
+/cad/tools/mentor/AMS162/aol/lib/libeldoudm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos1_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoekv_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosp9_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldocsem_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos2_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos3_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobip_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldodio_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldojfet_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosoi_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos4_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoasitft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldohisim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldospmod_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopsp_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosvar_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldolegtft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosimkit_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomoto_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldost_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobnr_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldorockw_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopubhicum_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldotftsh_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobta_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofas_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofascm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosdsim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldowire_64.so
+/cad/tools/mentor/AMS162/aol/lib/libogr_64.so loaded.
+
+
+
+Copyright 1988 Mentor Graphics Corporation
+All Rights Reserved
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : arjunmenonv
+*** OS    : Ubuntu 16.04 LTS \n \l [VCO = aol]
+*** CPU   :
+    Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 8
+*** Freq  : 3266.490MHz
+*** Cache : 6144 KB
+*** MEM   : 8058752 kB
+*** Date  : Sun Apr 18 15:52:32 2021
+
+*** Eldo VERSION : ELDO 16.2 patch1 (64 bits) Fri Jun 24 12:20:01 GMT 2016
+
+***** PRE-PROCESSING ...
+
+
+***** ANALYSIS ....
+
+Note 45: The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./Mixer_default_default.cir" line 53:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-08 s.
+Implicit port index  1 assigned to device V_RF-
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (MB):    399
+27 elements
+17 nodes
+5 input signals
+
+***> Parsing CPU TIME 0h 0mn 0s 000ms <***
+
+
+
+run number 1 out of 3
+   value of parameter F_LO is 1.900000E+09
+
+*** DATE: 18-Apr-2021 15:52:33
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -1.200000e+00V and
+                                  2.400000e+00V
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 010ms <***
+
+DC:7 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost arjun-Lenovo-ubuntu18 -jwdbport 43979
+
+
+
+***>Current simulation completed
+
+
+
+
+
+***>CPU TIME 0s 010ms <***
+
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+Compute from 0.000000 Nano to 1.000000E+03 Nano
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 160)
+CPU Usage                          :  93%               ( 93%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 300)
+CPU Usage                          :  95%               ( 94%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 440)
+CPU Usage                          :  93%               ( 94%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 590)
+CPU Usage                          : 100%               ( 95%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  0s 730)
+CPU Usage                          :  94%               ( 95%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 880)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  1s  20)
+CPU Usage                          :  93%               ( 95%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 170)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 320)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 470)
+CPU Usage                          : 100%               ( 97%)
+
+
+***>Current simulation completed
+
+
+
+
+
+***>CPU TIME 1s 470ms <***
+
+
+
+run number 2 out of 3
+   value of parameter F_LO is 2.000000E+09
+
+*** DATE: 18-Apr-2021 15:52:35
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:7 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+***>Current simulation completed
+
+
+
+
+
+***>CPU TIME 0s 000ms <***
+
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+Compute from 0.000000 Nano to 1.000000E+03 Nano
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 150)
+CPU Usage                          :  93%               ( 93%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 300)
+CPU Usage                          :  95%               ( 94%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 460)
+CPU Usage                          : 100%               ( 96%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 610)
+CPU Usage                          :  95%               ( 96%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 770)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 920)
+CPU Usage                          :  95%               ( 97%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s  70)
+CPU Usage                          :  95%               ( 97%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 220)
+CPU Usage                          :  95%               ( 96%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 380)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 530)
+CPU Usage                          :  96%               ( 97%)
+
+
+***>Current simulation completed
+
+
+
+
+
+***>CPU TIME 1s 530ms <***
+
+
+
+run number 3 out of 3
+   value of parameter F_LO is 2.100000E+09
+
+*** DATE: 18-Apr-2021 15:52:36
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/Mixer Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:7 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  401.1
+nb of components: 27
+nb of nodes: 17
+nb of MOS or BIP calls: 203
+Number of steps computed: 0
+
+***>CPU TIME 0s 000ms <***
+
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+N$178         1.2000     
+N$211         0.0000     
+N$214         0.0000     
+N$231         331.3366M  
+N$29          1.9978U    
+V_D_TRAN      1.9978U    
+V_IF+         1.2000     
+V_IF-         1.2000     
+V_IN+         331.3366M  
+V_IN-         331.3366M  
+V_LO+         0.0000     
+V_LO-         0.0000     
+V_RF+         0.0000     
+V_RF-         0.0000     
+V_RF-:INTR    0.0000     
+
+   TOTAL POWER DISSIPATION:  447.4110U   WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+Compute from 0.000000 Nano to 1.000000E+03 Nano
+................................................
+Simulation progress                : 10% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 160)
+CPU Usage                          :  95%               ( 95%)
+................................................
+Simulation progress                : 20% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 320)
+CPU Usage                          :  97%               ( 96%)
+................................................
+Simulation progress                : 30% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 480)
+CPU Usage                          :  96%               ( 96%)
+................................................
+Simulation progress                : 40% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  0s 630)
+CPU Usage                          :  91%               ( 95%)
+................................................
+Simulation progress                : 50% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  0s 800)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 60% (t = 600.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  0s 960)
+CPU Usage                          :  97%               ( 97%)
+................................................
+Simulation progress                : 70% (t = 700.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 120)
+CPU Usage                          :  97%               ( 97%)
+................................................
+Simulation progress                : 80% (t = 800.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  1s 290)
+CPU Usage                          : 100%               ( 97%)
+................................................
+Simulation progress                : 90% (t = 900.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 450)
+CPU Usage                          :  98%               ( 97%)
+................................................
+Simulation progress                : 100% (t = 1.0000 U)
+Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  1s 610)
+CPU Usage                          :  98%               ( 97%)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  401.1
+Latency: 0.000000%
+average number of newton iterations: 2.908811
+nb of components: 27
+nb of nodes: 17
+nb of MOS or BIP calls: 462339
+Number of steps computed: 46201
+
+***>CPU TIME 1s 610ms <***
+
+***>MESSAGE SUMMARY: 1 warning, 1 note
+
+***>GLOBAL CPU TIME 4s 640ms <***
+
+
+***>GLOBAL ELAPSED TIME 6s <***
+

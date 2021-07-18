@@ -1,0 +1,278 @@
+
+Running eldo on arjun-Lenovo-ubuntu18
+with Eldo libraries :
+/cad/tools/mentor/AMS162/aol/lib/libeldoudm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos1_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoekv_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosp9_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldocsem_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos2_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos3_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobip_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldodio_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldojfet_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosoi_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomos4_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldoasitft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldohisim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldospmod_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopsp_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomosvar_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldolegtft_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosimkit_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldomoto_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldost_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobnr_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldorockw_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldopubhicum_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldotftsh_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldobta_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofas_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldofascm_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldosdsim_64.so
+/cad/tools/mentor/AMS162/aol/lib/libeldowire_64.so
+/cad/tools/mentor/AMS162/aol/lib/libogr_64.so loaded.
+
+
+
+Copyright 1988 Mentor Graphics Corporation
+All Rights Reserved
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : arjunmenonv
+*** OS    : Ubuntu 16.04 LTS \n \l [VCO = aol]
+*** CPU   :
+    Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 8
+*** Freq  : 3207.947MHz
+*** Cache : 6144 KB
+*** MEM   : 8058752 kB
+*** Date  : Thu Apr 29 16:57:52 2021
+
+*** Eldo VERSION : ELDO 16.2 patch1 (64 bits) Fri Jun 24 12:20:01 GMT 2016
+
+***** PRE-PROCESSING ...
+
+
+***** ANALYSIS ....
+
+Note 45: The $ character has been found in the netlist while used as a comment character
++   because hspice compatibility has been set up. If eldo returns a parsing error
++   on a line that contains a $ character please refer to the "hspice compatibility"
++   documentation section for the possible solutions.
+Warning 1117: In file "./VCO_v1_default_default.cir" line 35:
++   SST analysis Error: multiple .SST analysis specified (only one is allowed), previous one is ignored.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1473: COMMAND .PROBE V: The default analysis for .SST results is set to FSST.
++   If TSST results are required, the type of analysis must be explicitly given.
+Warning 1473: COMMAND .PROBE SG: The default analysis for .SST results is set to FSST.
++   If TSST results are required, the type of analysis must be explicitly given.
+Warning 1479: Some .EXTRACT commands are declared for DC analysis.
++   They are ignored because this analysis is not enabled.
+
+***** 0  error(s). 
+***** 4  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (MB):    399
+31 elements
+16 nodes
+5 input signals
+
+***> Parsing Threads CPU TIME 0h 0mn 0s 010ms <***
+
+*** DATE: 29-Apr-2021 16:57:53
+*** TITLE: * Component: /home/arjunmenonv/Eldo_files/VCO/VCO_v1 Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -1.200000e+00V and
+                                  2.400000e+00V
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC Threads CPU TIME 0s 000ms <***
+
+
+***> DC ELAPSED TIME 0s <***
+
+DC:6 iterations FOR DC analysis
+N$49          621.3563M  
+N$65          486.1122M  
+N$69          0.0000     
+N$71          0.0000     
+N$73          0.0000     
+N$76          0.0000     
+N$78          0.0000     
+N$80          0.0000     
+VB0           0.0000     
+VB1           0.0000     
+VB2           0.0000     
+V_B           486.1122M  
+V_CTRL        935.0000M  
+V_DD          1.2000     
+V_OUT+        1.2000     
+V_OUT-        1.2000     
+
+   TOTAL POWER DISSIPATION:  5.9456M     WATTS
+
+ gm_bias =  17.6278M      
+ cgs_bias = -56.5261P      
+ vgs_bias =  486.1122M     
+ vds_bias =  621.3563M     
+ gm_cc =  24.2464M      
+ cgs_cc = -103.5706F     
+ vgs_cc =  578.6437M     
+ vds_cc =  578.6437M     
+ bias_pow =  1.7014M     Watt 
+***> Average number of processors used: 1
+
+*********************************************
+
+***      Eldo Steady-State Analysis       ***
+
+*********************************************
+
+    FUND_OSC_GUESS: 4200000000.0Hz     NHARM: 10
+    Total # of spectrum frequencies: 11
+Initialization Phase:
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+***> Average number of processors used: 1
+
+***> DC Threads CPU TIME 0s 000ms <***
+
+
+***> DC ELAPSED TIME 0s <***
+
+DC:1 iterations FOR DC analysis
+N$49          621.3562M  
+N$65          486.1122M  
+N$69          0.0000     
+N$71          0.0000     
+N$73          0.0000     
+N$76          0.0000     
+N$78          0.0000     
+N$80          0.0000     
+VB0           0.0000     
+VB1           0.0000     
+VB2           0.0000     
+V_B           486.1122M  
+V_CTRL        935.0000M  
+V_DD          1.2000     
+V_OUT+        1.2000     
+V_OUT-        1.2000     
+
+   TOTAL POWER DISSIPATION:  5.9456M     WATTS
+
+ gm_bias =  17.6278M      
+ cgs_bias = -56.5261P      
+ vgs_bias =  486.1122M     
+ vds_bias =  621.3562M     
+ gm_cc =  24.2465M      
+ cgs_cc = -103.5706F     
+ vgs_cc =  578.6438M     
+ vds_cc =  578.6438M     
+ bias_pow =  1.7014M     Watt 
+***> Average number of processors used: 1
+ ****
+ ****
+ ****
+ ***
+ ***
+ ***
+ **
+ *
+ *
+ 
+ *
+
+Optimization Phase:
+ F0 = 4.20086799e+09, ********
+ F0 = 4.20006589e+09, *****
+ F0 = 4.20006492e+09, ****
+0
+0
+
+
+***  Steady-State Oscillation frequency: 4.2000649347e+09 Hz
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost arjun-Lenovo-ubuntu18 -jwdbport 44427
+
+
+
+***>Current simulation completed
+
+
+ fosc =  4.2001G       
+ fund_osc =  4.2001G       
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  424.6
+Latency: 0.000000%
+average number of newton iterations: 0.500000
+nb of components: 31
+nb of nodes: 16
+nb of MOS or BIP calls: 20555
+Number of steps computed: 0
+
+***>Threads CPU TIME 0s 040ms <***
+
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  424.6
+Latency: 0.000000%
+average number of newton iterations: 0.500000
+nb of components: 31
+nb of nodes: 16
+nb of MOS or BIP calls: 20555
+Number of steps computed: 0
+
+***>Threads CPU TIME 0s 050ms <***
+
+Save file /home/arjunmenonv/Eldo_files/VCO/VCO_v1/default/VCO_v1_default_default.sst created  for SST analysis.. 
+
+Oscillator Convergence has achieved using:
+.OPTION SST_OSC_PHASE_SEQUENCE = SEQ_1
+
+
+***> Average number of processors used: 0
+***>MESSAGE SUMMARY: 4 warnings, 1 note
+
+***>GLOBAL CPU TIME 0s 090ms <***
+
+
+***>GLOBAL ELAPSED TIME 2s <***
+

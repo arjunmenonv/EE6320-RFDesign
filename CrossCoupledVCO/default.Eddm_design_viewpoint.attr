@@ -1,0 +1,46 @@
+A 5 u Eddm_design_viewpoint 608929a003e4.03.7f.00.01.01.00.7e.0c 3 2 23 0
+V v 2 4 608929a07a95.03.7f.00.01.01.00.7e.0c
+F f 2 "default.dvpt_2"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 3 4 608a3f2d9572.03.7f.00.01.01.00.6e.43
+F f 3 "default.dvpt_3"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 3
+P "default_state" "default"
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic" 8 mgc_schematic 608a3f2d8351.03.7f.00.01.01.00.6e.43 60890e81abe8.03.7f.00.01.01.00.7e.0c
+R cspuv 1 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/part" 1 Eddm_part 6089299fe6d1.03.7f.00.01.01.01.7e.0c 6089299fe6d1.03.7f.00.01.01.00.7e.0c
+R cspuv 2 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/default/default" 1 Eddm_ba_mgr 608929a009ce.03.7f.00.01.01.01.7e.0c 608929a009ce.03.7f.00.01.01.00.7e.0c
+R cspuv 3 "$MGC_IC_DEVICE_LIB/ideal_capacitor/part" 7 Eddm_part 52ce5fe01e9f.03.89.ca.95.24.00.3c.63 3900e8d5884e.03.93.22.22.60.00.56.1b
+R cspuv 4 "$MGC_IC_DEVICE_LIB/nmos_4pin/part" 3 Eddm_part 4b7065fb3b1b.03.93.22.29.5e.00.5f.98 3900e8d5523c.03.93.22.22.60.00.56.1b
+R cspuv 5 "$MGC_IC_DEVICE_LIB/inductor/part" 6 Eddm_part 52ce4074f0e9.03.89.ca.95.24.00.53.d4 3900e8d57bc7.03.93.22.22.60.00.56.1b
+R cspuv 6 "$MGC_IC_DEVICE_LIB/ideal_resistor/part" 4 Eddm_part 529f0f9fe60f.03.89.ca.95.24.00.04.60 3900e8d5419c.03.93.22.22.60.00.56.1b
+R cspuv 7 "$MGC_IC_SOURCES_LIB/dc_i_source/part" 1 Eddm_part 3890a870199d.03.86.56.31.70.00.34.2e 3890a962031f.03.86.56.31.70.00.34.72
+R cspuv 8 "$MGC_IC_SOURCES_LIB/dc_v_source/part" 2 Eddm_part 4a53bf83556a.03.93.22.29.5e.00.6e.e2 3890a962031f.03.86.56.31.70.01.34.72
+R cspuv 9 "$MGC_IC_DEVICE_LIB/nmos_4pin/nmos_4pin" 3 mgc_symbol 4b7065fb3b01.03.93.22.29.5e.00.5f.98 3900e8d55292.03.93.22.22.60.00.56.1b
+R cspuv 10 "$MGC_IC_SOURCES_LIB/dc_i_source/dc_i_source" 1 mgc_symbol 3890a8701970.03.86.56.31.70.00.34.2e 3890a962031e.03.86.56.31.70.00.34.72
+R cspuv 11 "$MGC_IC_DEVICE_LIB/ideal_capacitor/ideal_capacitor" 7 mgc_symbol 52ce5fe01e99.03.89.ca.95.24.00.3c.63 3900e8d588b1.03.93.22.22.60.00.56.1b
+R cspuv 12 "$MGC_IC_SOURCES_LIB/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 3890a962031f.03.86.56.31.70.02.34.72
+R cspuv 13 "$MGC_IC_DEVICE_LIB/inductor/inductor" 6 mgc_symbol 52ce4074f0dd.03.89.ca.95.24.00.53.d4 3900e8d57c2b.03.93.22.22.60.00.56.1b
+R cspuv 14 "$MGC_IC_DEVICE_LIB/ideal_resistor/ideal_resistor" 11 mgc_symbol 6045249e4abc.03.7f.00.01.01.00.17.6b 3900e8d54202.03.93.22.22.60.00.56.1b
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/schematic" 2 mgc_schematic 6089299fe79c.03.7f.00.01.01.00.7e.0c 60890e81abe8.03.7f.00.01.01.00.7e.0c
+R cspuv 1 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/part" 1 Eddm_part 6089299fe6d1.03.7f.00.01.01.01.7e.0c 6089299fe6d1.03.7f.00.01.01.00.7e.0c
+R cspuv 2 "/home/arjunmenonv/Eldo_files/VCO/VCO_v1/default/default" 1 Eddm_ba_mgr 608929a009ce.03.7f.00.01.01.01.7e.0c 608929a009ce.03.7f.00.01.01.00.7e.0c
+R cspuv 3 "$MGC_IC_DEVICE_LIB/ideal_capacitor/part" 7 Eddm_part 52ce5fe01e9f.03.89.ca.95.24.00.3c.63 3900e8d5884e.03.93.22.22.60.00.56.1b
+R cspuv 4 "$MGC_IC_DEVICE_LIB/nmos_4pin/part" 3 Eddm_part 4b7065fb3b1b.03.93.22.29.5e.00.5f.98 3900e8d5523c.03.93.22.22.60.00.56.1b
+R cspuv 5 "$MGC_IC_DEVICE_LIB/inductor/part" 6 Eddm_part 52ce4074f0e9.03.89.ca.95.24.00.53.d4 3900e8d57bc7.03.93.22.22.60.00.56.1b
+R cspuv 6 "$MGC_IC_DEVICE_LIB/ideal_resistor/part" 4 Eddm_part 529f0f9fe60f.03.89.ca.95.24.00.04.60 3900e8d5419c.03.93.22.22.60.00.56.1b
+R cspuv 7 "$MGC_IC_SOURCES_LIB/dc_i_source/part" 1 Eddm_part 3890a870199d.03.86.56.31.70.00.34.2e 3890a962031f.03.86.56.31.70.00.34.72
+R cspuv 8 "$MGC_IC_SOURCES_LIB/dc_v_source/part" 2 Eddm_part 4a53bf83556a.03.93.22.29.5e.00.6e.e2 3890a962031f.03.86.56.31.70.01.34.72
+R cspuv 9 "$MGC_IC_DEVICE_LIB/nmos_4pin/nmos_4pin" 3 mgc_symbol 4b7065fb3b01.03.93.22.29.5e.00.5f.98 3900e8d55292.03.93.22.22.60.00.56.1b
+R cspuv 10 "$MGC_IC_SOURCES_LIB/dc_i_source/dc_i_source" 1 mgc_symbol 3890a8701970.03.86.56.31.70.00.34.2e 3890a962031e.03.86.56.31.70.00.34.72
+R cspuv 11 "$MGC_IC_DEVICE_LIB/ideal_capacitor/ideal_capacitor" 7 mgc_symbol 52ce5fe01e99.03.89.ca.95.24.00.3c.63 3900e8d588b1.03.93.22.22.60.00.56.1b
+R cspuv 12 "$MGC_IC_SOURCES_LIB/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 3890a962031f.03.86.56.31.70.02.34.72
+R cspuv 13 "$MGC_IC_DEVICE_LIB/inductor/inductor" 6 mgc_symbol 52ce4074f0dd.03.89.ca.95.24.00.53.d4 3900e8d57c2b.03.93.22.22.60.00.56.1b
+R cspuv 14 "$MGC_IC_DEVICE_LIB/ideal_resistor/ideal_resistor" 11 mgc_symbol 6045249e4abc.03.7f.00.01.01.00.17.6b 3900e8d54202.03.93.22.22.60.00.56.1b

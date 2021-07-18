@@ -1,0 +1,46 @@
+* ELDO netlist generated with ICnet by 'arjunmenonv' on Sun Apr 18 2021 at 15:52:31
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : /home/arjunmenonv/Eldo_files/Mixer
+*
+        V3 V_LO- GROUND PULSE ( 0 V_LO {0.5/f_LO} 10p 10p {0.5*(1/f_LO -
++  20p)} {1/f_LO} )
+        C_FILT V_IF+ V_IF- C_pole
+        V1 N$178 GROUND DC 1.2V
+        C1 V_IN+ V_RF+ 5n
+        R7 N$214 GROUND {1.885e11*L_deg} NOISE=1
+        R1 N$178 V_IF- {(1+ gamma)*500} NOISE=1
+        R3 N$231 V_IN+ 1meg NOISE=1
+        L2 N$211 GROUND {(1+ gamma)*L_deg}
+        L1 N$214 GROUND {(1-gamma)*L_deg}
+        R8 N$211 GROUND {1.885e11*L_deg} NOISE=1
+        R4 N$231 V_IN- 1meg NOISE=1
+        C2 V_IN- V_RF- 5n
+        M5 V_IF- V_LO+ N$29 N$29 CMOSN L={(1+ gamma)*L_diff} W={(1+ gamma)*W_diff}
++  M=1
+        R5 N$178 V_IF+ {(1- gamma)*500} NOISE=1
+        M2 V_IF- V_LO- V_D_TRAN V_D_TRAN CMOSN L={(1+ gamma)*L_diff} W={(1+
++  gamma)*W_diff} M=1
+        M3 V_D_TRAN V_IN+ N$214 N$214 CMOSN L={(1- gamma)*L_tran} W={(1-
++  gamma)*W_tran} M=1
+        V2 V_LO+ GROUND PULSE ( 0 V_LO 0 10p 10p {0.5*(1/f_LO - 20p)} {1/f_LO}
++  )
+        M1 V_IF+ V_LO+ V_D_TRAN V_D_TRAN CMOSN L={(1- gamma)*L_diff} W={(1-
++  gamma)*W_diff} M=1
+        M6 N$29 V_IN- N$211 N$211 CMOSN L={(1+ gamma)*L_tran} W={(1+ gamma)*W_tran}
++  M=1
+        V_RF- V_RF- GROUND RPORT=0 DC 0V AC -1m 0
+        I1 N$178 N$231 DC I_dc
+        M4 V_IF+ V_LO- N$29 N$29 CMOSN L={(1- gamma)*L_diff} W={(1- gamma)*W_diff}
++  M=1
+        V4 V_RF+ GROUND DC 0V AC 1 0
+        M9 N$231 N$231 GROUND GROUND CMOSN L=L_tran W=W_tran M=1
+*
+.end
